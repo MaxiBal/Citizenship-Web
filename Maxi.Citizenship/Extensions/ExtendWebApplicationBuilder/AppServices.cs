@@ -24,7 +24,7 @@ public static partial class AppServices
             //.AddAppOpenTelemetry("MaxiBal.Api")
             .AddAppResponseCompression()
             //.AddDatabaseDeveloperPageExceptionFilter() // https://github.com/aspnet/Announcements/issues/432
-            .AddAuth()
+            .AddAuth(builder.Configuration)
             .AddHealthChecks()
 
             ;

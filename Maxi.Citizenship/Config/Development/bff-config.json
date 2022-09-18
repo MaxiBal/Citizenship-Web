@@ -1,0 +1,6 @@
+﻿{
+  "Bff": {
+    "Authority": "https://localhost:44310",
+    "ClientId": "CitizenshipUser"
+  }
+}

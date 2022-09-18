@@ -4,12 +4,12 @@ namespace Maxi.Citizenship.Extensions.ExtendIServiceCollection;
 
 public static partial class AppAuth
 {
-    public static IServiceCollection AddAuth(this IServiceCollection services)
+    public static IServiceCollection AddAuth(this IServiceCollection services, IConfiguration configuration)
     {
-        services.AddBff()
-            .AddRemoteApis();
+        _ = services.AddBff()
+                    .AddRemoteApis();
 
-        services.AddAuthentication(options =>
+        _ = services.AddAuthentication(options =>
         {
             options.DefaultScheme = "cookie";
             options.DefaultChallengeScheme = "oidc";
@@ -20,8 +20,8 @@ public static partial class AppAuth
             options.Cookie.SameSite = SameSiteMode.Strict;
         }).AddOpenIdConnect("oidc", options =>
         {
-            options.Authority = "https://localhost:44310";
-            options.ClientId = "CitizenshipUser";
+            options.Authority = configuration.GetValue<string>("Bff:Authority");
+            options.ClientId = configuration.GetValue<string>("Bff:ClientId", "CitizenshipUser");
             options.ClientSecret = "Give me your tired, your poor";
             options.ResponseType = "code";
             options.ResponseMode = "query";

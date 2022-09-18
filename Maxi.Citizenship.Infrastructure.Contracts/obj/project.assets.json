@@ -2,14 +2,14 @@
   "version": 3,
   "targets": {
     "net7.0": {
-      "Microsoft.EntityFrameworkCore/7.0.0-preview.7.22376.2": {
+      "Microsoft.EntityFrameworkCore/7.0.0-rc.1.22426.7": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Abstractions": "7.0.0-preview.7.22376.2",
-          "Microsoft.EntityFrameworkCore.Analyzers": "7.0.0-preview.7.22376.2",
-          "Microsoft.Extensions.Caching.Memory": "7.0.0-preview.7.22375.6",
-          "Microsoft.Extensions.DependencyInjection": "7.0.0-preview.7.22375.6",
-          "Microsoft.Extensions.Logging": "7.0.0-preview.7.22375.6"
+          "Microsoft.EntityFrameworkCore.Abstractions": "7.0.0-rc.1.22426.7",
+          "Microsoft.EntityFrameworkCore.Analyzers": "7.0.0-rc.1.22426.7",
+          "Microsoft.Extensions.Caching.Memory": "7.0.0-rc.1.22426.10",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0-rc.1.22426.10",
+          "Microsoft.Extensions.Logging": "7.0.0-rc.1.22426.10"
         },
         "compile": {
           "lib/net6.0/Microsoft.EntityFrameworkCore.dll": {
@@ -25,7 +25,7 @@
           "buildTransitive/net6.0/Microsoft.EntityFrameworkCore.props": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Abstractions/7.0.0-preview.7.22376.2": {
+      "Microsoft.EntityFrameworkCore.Abstractions/7.0.0-rc.1.22426.7": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {
@@ -38,7 +38,7 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Analyzers/7.0.0-preview.7.22376.2": {
+      "Microsoft.EntityFrameworkCore.Analyzers/7.0.0-rc.1.22426.7": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/_._": {}
@@ -47,11 +47,11 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/7.0.0-preview.7.22376.2": {
+      "Microsoft.EntityFrameworkCore.Relational/7.0.0-rc.1.22426.7": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "7.0.0-preview.7.22376.2",
-          "Microsoft.Extensions.Configuration.Abstractions": "7.0.0-preview.7.22375.6"
+          "Microsoft.EntityFrameworkCore": "7.0.0-rc.1.22426.7",
+          "Microsoft.Extensions.Configuration.Abstractions": "7.0.0-rc.1.22426.10"
         },
         "compile": {
           "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.dll": {
@@ -64,10 +64,10 @@
           }
         }
       },
-      "Microsoft.Extensions.Caching.Abstractions/7.0.0-preview.7.22375.6": {
+      "Microsoft.Extensions.Caching.Abstractions/7.0.0-rc.1.22426.10": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Primitives": "7.0.0-preview.7.22375.6"
+          "Microsoft.Extensions.Primitives": "7.0.0-rc.1.22426.10"
         },
         "compile": {
           "lib/net7.0/Microsoft.Extensions.Caching.Abstractions.dll": {
@@ -83,14 +83,14 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Caching.Memory/7.0.0-preview.7.22375.6": {
+      "Microsoft.Extensions.Caching.Memory/7.0.0-rc.1.22426.10": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Caching.Abstractions": "7.0.0-preview.7.22375.6",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0-preview.7.22375.6",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.0-preview.7.22375.6",
-          "Microsoft.Extensions.Options": "7.0.0-preview.7.22375.6",
-          "Microsoft.Extensions.Primitives": "7.0.0-preview.7.22375.6"
+          "Microsoft.Extensions.Caching.Abstractions": "7.0.0-rc.1.22426.10",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0-rc.1.22426.10",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0-rc.1.22426.10",
+          "Microsoft.Extensions.Options": "7.0.0-rc.1.22426.10",
+          "Microsoft.Extensions.Primitives": "7.0.0-rc.1.22426.10"
         },
         "compile": {
           "lib/net7.0/Microsoft.Extensions.Caching.Memory.dll": {
@@ -106,10 +106,10 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Configuration.Abstractions/7.0.0-preview.7.22375.6": {
+      "Microsoft.Extensions.Configuration.Abstractions/7.0.0-rc.1.22426.10": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Primitives": "7.0.0-preview.7.22375.6"
+          "Microsoft.Extensions.Primitives": "7.0.0-rc.1.22426.10"
         },
         "compile": {
           "lib/net7.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
@@ -125,10 +125,10 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.DependencyInjection/7.0.0-preview.7.22375.6": {
+      "Microsoft.Extensions.DependencyInjection/7.0.0-rc.1.22426.10": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0-preview.7.22375.6"
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0-rc.1.22426.10"
         },
         "compile": {
           "lib/net7.0/Microsoft.Extensions.DependencyInjection.dll": {
@@ -144,7 +144,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.DependencyInjection.Abstractions/7.0.0-preview.7.22375.6": {
+      "Microsoft.Extensions.DependencyInjection.Abstractions/7.0.0-rc.1.22426.10": {
         "type": "package",
         "compile": {
           "lib/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
@@ -160,13 +160,13 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Logging/7.0.0-preview.7.22375.6": {
+      "Microsoft.Extensions.Logging/7.0.0-rc.1.22426.10": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection": "7.0.0-preview.7.22375.6",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0-preview.7.22375.6",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.0-preview.7.22375.6",
-          "Microsoft.Extensions.Options": "7.0.0-preview.7.22375.6"
+          "Microsoft.Extensions.DependencyInjection": "7.0.0-rc.1.22426.10",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0-rc.1.22426.10",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0-rc.1.22426.10",
+          "Microsoft.Extensions.Options": "7.0.0-rc.1.22426.10"
         },
         "compile": {
           "lib/net7.0/Microsoft.Extensions.Logging.dll": {
@@ -182,7 +182,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/7.0.0-preview.7.22375.6": {
+      "Microsoft.Extensions.Logging.Abstractions/7.0.0-rc.1.22426.10": {
         "type": "package",
         "compile": {
           "lib/net7.0/Microsoft.Extensions.Logging.Abstractions.dll": {
@@ -198,11 +198,11 @@
           "buildTransitive/net6.0/Microsoft.Extensions.Logging.Abstractions.targets": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.0-preview.7.22375.6": {
+      "Microsoft.Extensions.Options/7.0.0-rc.1.22426.10": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0-preview.7.22375.6",
-          "Microsoft.Extensions.Primitives": "7.0.0-preview.7.22375.6"
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0-rc.1.22426.10",
+          "Microsoft.Extensions.Primitives": "7.0.0-rc.1.22426.10"
         },
         "compile": {
           "lib/net7.0/Microsoft.Extensions.Options.dll": {
@@ -218,7 +218,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Primitives/7.0.0-preview.7.22375.6": {
+      "Microsoft.Extensions.Primitives/7.0.0-rc.1.22426.10": {
         "type": "package",
         "compile": {
           "lib/net7.0/Microsoft.Extensions.Primitives.dll": {
@@ -234,10 +234,10 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Npgsql/7.0.0-preview.7": {
+      "Npgsql/7.0.0-rc.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.2",
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         },
         "compile": {
@@ -251,19 +251,23 @@
           }
         }
       },
-      "Npgsql.EntityFrameworkCore.PostgreSQL/7.0.0-preview.7": {
+      "Npgsql.EntityFrameworkCore.PostgreSQL/7.0.0-rc.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "7.0.0-preview.7.22376.2",
-          "Microsoft.EntityFrameworkCore.Abstractions": "7.0.0-preview.7.22376.2",
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.0-preview.7.22376.2",
-          "Npgsql": "7.0.0-preview.7"
+          "Microsoft.EntityFrameworkCore": "7.0.0-rc.1.22426.7",
+          "Microsoft.EntityFrameworkCore.Abstractions": "7.0.0-rc.1.22426.7",
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.0-rc.1.22426.7",
+          "Npgsql": "7.0.0-rc.1"
         },
         "compile": {
-          "lib/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {}
+          "lib/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {}
+          "lib/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
@@ -285,10 +289,10 @@
     }
   },
   "libraries": {
-    "Microsoft.EntityFrameworkCore/7.0.0-preview.7.22376.2": {
-      "sha512": "6zbPgxKu4+KQ1eV7guh+aS9kEYCjMhoECRK5FfV+pK9+iNPO4vghNFQ7TgARQOzmNHdSn9tKbRnAdvkVYp2p/Q==",
+    "Microsoft.EntityFrameworkCore/7.0.0-rc.1.22426.7": {
+      "sha512": "KmqgNUwQ7cSn4eUShafkWtrK9ZOQDeFn47xsmvYmTBIOH127VBE5t3LPZnpxrsgmqk5k09QRDe2lqiHa59heKg==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore/7.0.0-preview.7.22376.2",
+      "path": "microsoft.entityframeworkcore/7.0.0-rc.1.22426.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -296,56 +300,56 @@
         "buildTransitive/net6.0/Microsoft.EntityFrameworkCore.props",
         "lib/net6.0/Microsoft.EntityFrameworkCore.dll",
         "lib/net6.0/Microsoft.EntityFrameworkCore.xml",
-        "microsoft.entityframeworkcore.7.0.0-preview.7.22376.2.nupkg.sha512",
+        "microsoft.entityframeworkcore.7.0.0-rc.1.22426.7.nupkg.sha512",
         "microsoft.entityframeworkcore.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Abstractions/7.0.0-preview.7.22376.2": {
-      "sha512": "qhbgf0IMJ2bxHSvjvhDShKAFBbFeI+P7xd5huMChGk+OaWOhBlbeowtiaI6oNu7cwG6vETUixDm4XHEZrwEy5g==",
+    "Microsoft.EntityFrameworkCore.Abstractions/7.0.0-rc.1.22426.7": {
+      "sha512": "hm8rHGkVwpiBuPNz2TOpcxi6a2syjS7Y+yxvaB9ubbUL09D0nOserO16pvZ5tRhJrG9NGSFzlydDGF1O8T+h9Q==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.abstractions/7.0.0-preview.7.22376.2",
+      "path": "microsoft.entityframeworkcore.abstractions/7.0.0-rc.1.22426.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll",
         "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.xml",
-        "microsoft.entityframeworkcore.abstractions.7.0.0-preview.7.22376.2.nupkg.sha512",
+        "microsoft.entityframeworkcore.abstractions.7.0.0-rc.1.22426.7.nupkg.sha512",
         "microsoft.entityframeworkcore.abstractions.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Analyzers/7.0.0-preview.7.22376.2": {
-      "sha512": "d2v1W9MraeA5PoppTdkPd+4woTJKy9dcka0c97cMQhv7RArb5eOI7CrZoz3f16gqx+bibw5ALSbOPY9zNAr/IA==",
+    "Microsoft.EntityFrameworkCore.Analyzers/7.0.0-rc.1.22426.7": {
+      "sha512": "ocx0Qq1e1wkfZu/JuSgGc1V1g1ofydD/VFF8fqbXVCcqhE+ZWkBs/i3RzTxCUHO0ICxWPLj2IFFPuqD8j+m36g==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.analyzers/7.0.0-preview.7.22376.2",
+      "path": "microsoft.entityframeworkcore.analyzers/7.0.0-rc.1.22426.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "analyzers/dotnet/cs/Microsoft.EntityFrameworkCore.Analyzers.dll",
         "lib/netstandard2.0/_._",
-        "microsoft.entityframeworkcore.analyzers.7.0.0-preview.7.22376.2.nupkg.sha512",
+        "microsoft.entityframeworkcore.analyzers.7.0.0-rc.1.22426.7.nupkg.sha512",
         "microsoft.entityframeworkcore.analyzers.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Relational/7.0.0-preview.7.22376.2": {
-      "sha512": "DKV0Zt4rDn9yVO04E/j3psdZLRWWE+EdD/KHdWFKYCdzVc35LS/hMOl5q4r+u92KRop1uy5hIr5WYG7xldSCwA==",
+    "Microsoft.EntityFrameworkCore.Relational/7.0.0-rc.1.22426.7": {
+      "sha512": "fkgsD+kjlTdUntMIUtdpT/eBB/LcLl68GDTRv/fuKqkE6vKLuSd5jBFgwvAx5h/Db71cT4Hd0wqsIj5NoW82RQ==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.relational/7.0.0-preview.7.22376.2",
+      "path": "microsoft.entityframeworkcore.relational/7.0.0-rc.1.22426.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.dll",
         "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.xml",
-        "microsoft.entityframeworkcore.relational.7.0.0-preview.7.22376.2.nupkg.sha512",
+        "microsoft.entityframeworkcore.relational.7.0.0-rc.1.22426.7.nupkg.sha512",
         "microsoft.entityframeworkcore.relational.nuspec"
       ]
     },
-    "Microsoft.Extensions.Caching.Abstractions/7.0.0-preview.7.22375.6": {
-      "sha512": "Td7xhWfRgQwwc7q+lcADQS4jF/fIBSmPNfvsmq3pDz6gx/hb1Psd59dYICBQPOPmBomSkponCjVoiCU1RKC4Bg==",
+    "Microsoft.Extensions.Caching.Abstractions/7.0.0-rc.1.22426.10": {
+      "sha512": "zyf7MoFLNIa+xnnIr/8Wfolv9a6P8CfsybJr3ivl9PQ/wbVE0cASBIHOCqfCIsWaVpAiZFRtkvZQcuVoASiDng==",
       "type": "package",
-      "path": "microsoft.extensions.caching.abstractions/7.0.0-preview.7.22375.6",
+      "path": "microsoft.extensions.caching.abstractions/7.0.0-rc.1.22426.10",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -364,15 +368,15 @@
         "lib/net7.0/Microsoft.Extensions.Caching.Abstractions.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.xml",
-        "microsoft.extensions.caching.abstractions.7.0.0-preview.7.22375.6.nupkg.sha512",
+        "microsoft.extensions.caching.abstractions.7.0.0-rc.1.22426.10.nupkg.sha512",
         "microsoft.extensions.caching.abstractions.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.Caching.Memory/7.0.0-preview.7.22375.6": {
-      "sha512": "A0SeN4gAkL/wmSeI6YrdIvH/sFUPnAiminUACwlqoP6uP3Hz/rG7rovOOh4lecfN5TKpkOMzB58nRVj06CGbHA==",
+    "Microsoft.Extensions.Caching.Memory/7.0.0-rc.1.22426.10": {
+      "sha512": "KNDdlv8xmdMwrF+ZaQB6fccfWIECLhLvCQB5tVPaNK1ipNdLLtZCA5I3E+QiJ35jq/2zLfi4PmKQ+b9SH+7VAQ==",
       "type": "package",
-      "path": "microsoft.extensions.caching.memory/7.0.0-preview.7.22375.6",
+      "path": "microsoft.extensions.caching.memory/7.0.0-rc.1.22426.10",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -391,15 +395,15 @@
         "lib/net7.0/Microsoft.Extensions.Caching.Memory.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.xml",
-        "microsoft.extensions.caching.memory.7.0.0-preview.7.22375.6.nupkg.sha512",
+        "microsoft.extensions.caching.memory.7.0.0-rc.1.22426.10.nupkg.sha512",
         "microsoft.extensions.caching.memory.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.Configuration.Abstractions/7.0.0-preview.7.22375.6": {
-      "sha512": "X8X4jZObkZdUpzypM3feTlglJAUmpcPDRdxHSh9bVBeVtX605UBE0sl0QbgSmf4VcYMESI7UFFMJxfDoqp5KtA==",
+    "Microsoft.Extensions.Configuration.Abstractions/7.0.0-rc.1.22426.10": {
+      "sha512": "jNGwbAX8UciQz29HwGAOLyHKYBPKW/3/roNPRd692qgi8LhaTkcl4hCF8sx4Io5s5mGxEBrNhh7jmyNRLCfxcw==",
       "type": "package",
-      "path": "microsoft.extensions.configuration.abstractions/7.0.0-preview.7.22375.6",
+      "path": "microsoft.extensions.configuration.abstractions/7.0.0-rc.1.22426.10",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -418,15 +422,15 @@
         "lib/net7.0/Microsoft.Extensions.Configuration.Abstractions.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.xml",
-        "microsoft.extensions.configuration.abstractions.7.0.0-preview.7.22375.6.nupkg.sha512",
+        "microsoft.extensions.configuration.abstractions.7.0.0-rc.1.22426.10.nupkg.sha512",
         "microsoft.extensions.configuration.abstractions.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.DependencyInjection/7.0.0-preview.7.22375.6": {
-      "sha512": "dpintGefhfAEESRCPjfvNd4t5FZkiUkw8zy4d/1CrXpDnKCA7sZNGyk9G/p2TSp3P3pFEWwqR6fzbwwSSNiJ4Q==",
+    "Microsoft.Extensions.DependencyInjection/7.0.0-rc.1.22426.10": {
+      "sha512": "P7COzZFQKK9YzxomJUl9zXOKkt+5JJ4BIwHl/sN7+gHWAGjY9bD3yqV0Vzf5moGahBVrvL7dWyX1AN2MeoL68g==",
       "type": "package",
-      "path": "microsoft.extensions.dependencyinjection/7.0.0-preview.7.22375.6",
+      "path": "microsoft.extensions.dependencyinjection/7.0.0-rc.1.22426.10",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -447,15 +451,15 @@
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.xml",
         "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll",
         "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.xml",
-        "microsoft.extensions.dependencyinjection.7.0.0-preview.7.22375.6.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.7.0.0-rc.1.22426.10.nupkg.sha512",
         "microsoft.extensions.dependencyinjection.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.DependencyInjection.Abstractions/7.0.0-preview.7.22375.6": {
-      "sha512": "BDySSDMl7+H4l8qgrzrtjG8/DcD8wJAWdnKxWG/hQBTIb9Qk8G8wsOWgY28ucLPj1ofFl6a2+jblj/wRMmARFQ==",
+    "Microsoft.Extensions.DependencyInjection.Abstractions/7.0.0-rc.1.22426.10": {
+      "sha512": "DJfKuxPF9IF1BnFxpEYLLXthLg6QEXopGtxGfuSCc3/fWJdnwPwSCTA6DOl5LHtRHogJlq6haL3Ehh+RNVpW7Q==",
       "type": "package",
-      "path": "microsoft.extensions.dependencyinjection.abstractions/7.0.0-preview.7.22375.6",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/7.0.0-rc.1.22426.10",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -476,15 +480,15 @@
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
         "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
         "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
-        "microsoft.extensions.dependencyinjection.abstractions.7.0.0-preview.7.22375.6.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.7.0.0-rc.1.22426.10.nupkg.sha512",
         "microsoft.extensions.dependencyinjection.abstractions.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.Logging/7.0.0-preview.7.22375.6": {
-      "sha512": "pknRJj4OnNpcu4gXspNWlsOUuRXCaz9V7KgmGeS9kFygPqjMYGX/mBlk23hFbKrnrblVK4aJYrllZMbb1Qv8yA==",
+    "Microsoft.Extensions.Logging/7.0.0-rc.1.22426.10": {
+      "sha512": "8RkgzXx5vTJGFd60GBlk5vybpEBUXTxfgcRgQw1uaM2kAjovc/Q5xezT+u58xDsy4rLDfd0pGZ6EisV5GOcy4w==",
       "type": "package",
-      "path": "microsoft.extensions.logging/7.0.0-preview.7.22375.6",
+      "path": "microsoft.extensions.logging/7.0.0-rc.1.22426.10",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -505,15 +509,15 @@
         "lib/netstandard2.0/Microsoft.Extensions.Logging.xml",
         "lib/netstandard2.1/Microsoft.Extensions.Logging.dll",
         "lib/netstandard2.1/Microsoft.Extensions.Logging.xml",
-        "microsoft.extensions.logging.7.0.0-preview.7.22375.6.nupkg.sha512",
+        "microsoft.extensions.logging.7.0.0-rc.1.22426.10.nupkg.sha512",
         "microsoft.extensions.logging.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.Logging.Abstractions/7.0.0-preview.7.22375.6": {
-      "sha512": "IATOSQWWvIXcLJzo/bAu2Sj0zkEeTXnug3B1Ncd+76A2RQkV4L1U1zWB+8FveS1KwBJbNXFHRKRi+RAAJbql8g==",
+    "Microsoft.Extensions.Logging.Abstractions/7.0.0-rc.1.22426.10": {
+      "sha512": "ElrDslqtljpyFZTyygITf3VmYEWUE/ZsTaf7jltzbFohp5u51CLQ2OlO0dRSA8CsFqX/Axiu9vMwyUmt8NJo2g==",
       "type": "package",
-      "path": "microsoft.extensions.logging.abstractions/7.0.0-preview.7.22375.6",
+      "path": "microsoft.extensions.logging.abstractions/7.0.0-rc.1.22426.10",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -561,15 +565,15 @@
         "lib/net7.0/Microsoft.Extensions.Logging.Abstractions.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.xml",
-        "microsoft.extensions.logging.abstractions.7.0.0-preview.7.22375.6.nupkg.sha512",
+        "microsoft.extensions.logging.abstractions.7.0.0-rc.1.22426.10.nupkg.sha512",
         "microsoft.extensions.logging.abstractions.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.Options/7.0.0-preview.7.22375.6": {
-      "sha512": "N3Y5tD4NtmQ6YdSUIkqTP8dD8j3aX0ShkBLyarbrG4HC6f/yW955Qov6g4xQNJ/LKmb4G9afcD6aHvta4SzLnA==",
+    "Microsoft.Extensions.Options/7.0.0-rc.1.22426.10": {
+      "sha512": "DQ0guZczQIwu7kGsKy7072ncZOdbHC8r1bWLbh+/NaL/cVC1mrlK8UA8fQP+trtp2YYfOrfaF0wqffYkRdpQKg==",
       "type": "package",
-      "path": "microsoft.extensions.options/7.0.0-preview.7.22375.6",
+      "path": "microsoft.extensions.options/7.0.0-rc.1.22426.10",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -590,15 +594,15 @@
         "lib/netstandard2.0/Microsoft.Extensions.Options.xml",
         "lib/netstandard2.1/Microsoft.Extensions.Options.dll",
         "lib/netstandard2.1/Microsoft.Extensions.Options.xml",
-        "microsoft.extensions.options.7.0.0-preview.7.22375.6.nupkg.sha512",
+        "microsoft.extensions.options.7.0.0-rc.1.22426.10.nupkg.sha512",
         "microsoft.extensions.options.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.Primitives/7.0.0-preview.7.22375.6": {
-      "sha512": "ZEV7EZYDcCRdNZnnmYzsaqqTURYGpMB/0KETKD1GwQBjGWzBYGsefIEfSmUg5qDzCI1GduDSpoVsZcZiQWha1g==",
+    "Microsoft.Extensions.Primitives/7.0.0-rc.1.22426.10": {
+      "sha512": "BELLSkZWsX/Y4uNqbCiAnwBH5NnVfMAxs50SXUaV+edkO4rRJdskxHTLMgLCqtnTcy4UnWsERsnj/3zONGlogA==",
       "type": "package",
-      "path": "microsoft.extensions.primitives/7.0.0-preview.7.22375.6",
+      "path": "microsoft.extensions.primitives/7.0.0-rc.1.22426.10",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -617,15 +621,15 @@
         "lib/net7.0/Microsoft.Extensions.Primitives.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Primitives.xml",
-        "microsoft.extensions.primitives.7.0.0-preview.7.22375.6.nupkg.sha512",
+        "microsoft.extensions.primitives.7.0.0-rc.1.22426.10.nupkg.sha512",
         "microsoft.extensions.primitives.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "Npgsql/7.0.0-preview.7": {
-      "sha512": "O+xpXKxbekV51ztLAqT1NJ5jBvWkrDW29fM7fTFT7BDVBeAHGzZisMQH0vEvqA1YX4ip7paOuIXn6pnYx1Fykg==",
+    "Npgsql/7.0.0-rc.1": {
+      "sha512": "W0NSHn5t8TXb5Jg/57JWkOUW83cnp8F3OuNZk6hJOvReVNzAqpbFCxYd0UK2mtEiGBw8CcDKinY3xdWKWPOisg==",
       "type": "package",
-      "path": "npgsql/7.0.0-preview.7",
+      "path": "npgsql/7.0.0-rc.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -642,21 +646,22 @@
         "lib/netstandard2.0/Npgsql.xml",
         "lib/netstandard2.1/Npgsql.dll",
         "lib/netstandard2.1/Npgsql.xml",
-        "npgsql.7.0.0-preview.7.nupkg.sha512",
+        "npgsql.7.0.0-rc.1.nupkg.sha512",
         "npgsql.nuspec",
         "postgresql.png"
       ]
     },
-    "Npgsql.EntityFrameworkCore.PostgreSQL/7.0.0-preview.7": {
-      "sha512": "W2dHFjxkdIJXTXxI/J80dC/zxlSaIdw/P5dQSQegKW0px41tdoVZHBX4wvR5d9rEBfTEC6lCQvZoKb17i4X4Xw==",
+    "Npgsql.EntityFrameworkCore.PostgreSQL/7.0.0-rc.1": {
+      "sha512": "eC2ObAizLcYM3dyISN+1/fOiLDViaX9T4bAeOqDIuIkWbgkitP68JehtXgXkViA2HDdFRoL1rlPeFmW1snhGIg==",
       "type": "package",
-      "path": "npgsql.entityframeworkcore.postgresql/7.0.0-preview.7",
+      "path": "npgsql.entityframeworkcore.postgresql/7.0.0-rc.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
         "lib/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll",
-        "npgsql.entityframeworkcore.postgresql.7.0.0-preview.7.nupkg.sha512",
+        "lib/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.xml",
+        "npgsql.entityframeworkcore.postgresql.7.0.0-rc.1.nupkg.sha512",
         "npgsql.entityframeworkcore.postgresql.nuspec",
         "postgresql.png"
       ]
@@ -689,8 +694,8 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "Microsoft.EntityFrameworkCore >= 7.0.0-preview.7.22376.2",
-      "Npgsql.EntityFrameworkCore.PostgreSQL >= 7.0.0-preview.7"
+      "Microsoft.EntityFrameworkCore >= 7.0.0-rc.1.22426.7",
+      "Npgsql.EntityFrameworkCore.PostgreSQL >= 7.0.0-rc.1"
     ]
   },
   "packageFolders": {
@@ -740,11 +745,11 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
-            "version": "[7.0.0-preview.7.22376.2, )"
+            "version": "[7.0.0-rc.1.22426.7, )"
           },
           "Npgsql.EntityFrameworkCore.PostgreSQL": {
             "target": "Package",
-            "version": "[7.0.0-preview.7, )"
+            "version": "[7.0.0-rc.1, )"
           }
         },
         "imports": [
