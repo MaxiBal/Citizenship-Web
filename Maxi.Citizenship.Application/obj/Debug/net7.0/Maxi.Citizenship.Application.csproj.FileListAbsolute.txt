@@ -1,0 +1,12 @@
+C:\github\Maxi\Maxi.Citizenship\Maxi.Citizenship.Application\bin\Debug\net7.0\Maxi.Citizenship.Application.deps.json
+C:\github\Maxi\Maxi.Citizenship\Maxi.Citizenship.Application\bin\Debug\net7.0\Maxi.Citizenship.Application.dll
+C:\github\Maxi\Maxi.Citizenship\Maxi.Citizenship.Application\bin\Debug\net7.0\Maxi.Citizenship.Application.pdb
+C:\github\Maxi\Maxi.Citizenship\Maxi.Citizenship.Application\obj\Debug\net7.0\Maxi.Citizenship.Application.csproj.AssemblyReference.cache
+C:\github\Maxi\Maxi.Citizenship\Maxi.Citizenship.Application\obj\Debug\net7.0\Maxi.Citizenship.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\github\Maxi\Maxi.Citizenship\Maxi.Citizenship.Application\obj\Debug\net7.0\Maxi.Citizenship.Application.AssemblyInfoInputs.cache
+C:\github\Maxi\Maxi.Citizenship\Maxi.Citizenship.Application\obj\Debug\net7.0\Maxi.Citizenship.Application.AssemblyInfo.cs
+C:\github\Maxi\Maxi.Citizenship\Maxi.Citizenship.Application\obj\Debug\net7.0\Maxi.Citizenship.Application.csproj.CoreCompileInputs.cache
+C:\github\Maxi\Maxi.Citizenship\Maxi.Citizenship.Application\obj\Debug\net7.0\Maxi.Citizenship.Application.dll
+C:\github\Maxi\Maxi.Citizenship\Maxi.Citizenship.Application\obj\Debug\net7.0\refint\Maxi.Citizenship.Application.dll
+C:\github\Maxi\Maxi.Citizenship\Maxi.Citizenship.Application\obj\Debug\net7.0\Maxi.Citizenship.Application.pdb
+C:\github\Maxi\Maxi.Citizenship\Maxi.Citizenship.Application\obj\Debug\net7.0\ref\Maxi.Citizenship.Application.dll

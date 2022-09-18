@@ -1,0 +1,38 @@
+.grid {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+@supports (width: min(350px, 100%)) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
+  }
+}
+
+.question-card {
+  max-width: 346px;
+}
+
+.question-header-image {
+  /*background-image: url('https://wallpaperaccess.com/full/174591.jpg');*/
+  background-image: url('/assets/img/flag.jpg');
+  background-size: cover;
+}
+
+.answers {
+  /* -webkit-transition: max-height 1s;
+  -moz-transition: max-height 1s;
+  -ms-transition: max-height 1s;
+  -o-transition: max-height 1s;*/
+  transition: max-height 1.s ease-out;
+  background: #e5feff;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+  .answers.show {
+    opacity: 1;
+    max-height: 100%;
+    transition: max-height 5.25s linear;
+  }

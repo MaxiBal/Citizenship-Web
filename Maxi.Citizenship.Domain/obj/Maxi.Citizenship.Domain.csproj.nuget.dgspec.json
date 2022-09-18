@@ -1,0 +1,262 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\github\\Maxi\\Maxi.Citizenship\\Maxi.Citizenship.Domain\\Maxi.Citizenship.Domain.csproj": {}
+  },
+  "projects": {
+    "C:\\github\\Maxi\\Maxi.Citizenship\\Maxi.Citizenship.Domain.Contracts\\Maxi.Citizenship.Domain.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\github\\Maxi\\Maxi.Citizenship\\Maxi.Citizenship.Domain.Contracts\\Maxi.Citizenship.Domain.Contracts.csproj",
+        "projectName": "Maxi.Citizenship.Domain.Contracts",
+        "projectPath": "C:\\github\\Maxi\\Maxi.Citizenship\\Maxi.Citizenship.Domain.Contracts\\Maxi.Citizenship.Domain.Contracts.csproj",
+        "packagesPath": "C:\\Users\\balab\\.nuget\\packages\\",
+        "outputPath": "C:\\github\\Maxi\\Maxi.Citizenship\\Maxi.Citizenship.Domain.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\balab\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-rc.1.22431.12\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\github\\Maxi\\Maxi.Citizenship\\Maxi.Citizenship.Domain\\Maxi.Citizenship.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\github\\Maxi\\Maxi.Citizenship\\Maxi.Citizenship.Domain\\Maxi.Citizenship.Domain.csproj",
+        "projectName": "Maxi.Citizenship.Domain",
+        "projectPath": "C:\\github\\Maxi\\Maxi.Citizenship\\Maxi.Citizenship.Domain\\Maxi.Citizenship.Domain.csproj",
+        "packagesPath": "C:\\Users\\balab\\.nuget\\packages\\",
+        "outputPath": "C:\\github\\Maxi\\Maxi.Citizenship\\Maxi.Citizenship.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\balab\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\github\\Maxi\\Maxi.Citizenship\\Maxi.Citizenship.Domain.Contracts\\Maxi.Citizenship.Domain.Contracts.csproj": {
+                "projectPath": "C:\\github\\Maxi\\Maxi.Citizenship\\Maxi.Citizenship.Domain.Contracts\\Maxi.Citizenship.Domain.Contracts.csproj"
+              },
+              "C:\\github\\Maxi\\Maxi.Citizenship\\Maxi.Citizenship.Shared.Contracts\\Maxi.Citizenship.Shared.Contracts.csproj": {
+                "projectPath": "C:\\github\\Maxi\\Maxi.Citizenship\\Maxi.Citizenship.Shared.Contracts\\Maxi.Citizenship.Shared.Contracts.csproj"
+              },
+              "C:\\github\\Maxi\\Maxi.Citizenship\\Maxi.Citizenship.Shared\\Maxi.Citizenship.Shared.csproj": {
+                "projectPath": "C:\\github\\Maxi\\Maxi.Citizenship\\Maxi.Citizenship.Shared\\Maxi.Citizenship.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-rc.1.22431.12\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\github\\Maxi\\Maxi.Citizenship\\Maxi.Citizenship.Shared.Contracts\\Maxi.Citizenship.Shared.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\github\\Maxi\\Maxi.Citizenship\\Maxi.Citizenship.Shared.Contracts\\Maxi.Citizenship.Shared.Contracts.csproj",
+        "projectName": "Maxi.Citizenship.Shared.Contracts",
+        "projectPath": "C:\\github\\Maxi\\Maxi.Citizenship\\Maxi.Citizenship.Shared.Contracts\\Maxi.Citizenship.Shared.Contracts.csproj",
+        "packagesPath": "C:\\Users\\balab\\.nuget\\packages\\",
+        "outputPath": "C:\\github\\Maxi\\Maxi.Citizenship\\Maxi.Citizenship.Shared.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\balab\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-rc.1.22431.12\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\github\\Maxi\\Maxi.Citizenship\\Maxi.Citizenship.Shared\\Maxi.Citizenship.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\github\\Maxi\\Maxi.Citizenship\\Maxi.Citizenship.Shared\\Maxi.Citizenship.Shared.csproj",
+        "projectName": "Maxi.Citizenship.Shared",
+        "projectPath": "C:\\github\\Maxi\\Maxi.Citizenship\\Maxi.Citizenship.Shared\\Maxi.Citizenship.Shared.csproj",
+        "packagesPath": "C:\\Users\\balab\\.nuget\\packages\\",
+        "outputPath": "C:\\github\\Maxi\\Maxi.Citizenship\\Maxi.Citizenship.Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\balab\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\github\\Maxi\\Maxi.Citizenship\\Maxi.Citizenship.Shared.Contracts\\Maxi.Citizenship.Shared.Contracts.csproj": {
+                "projectPath": "C:\\github\\Maxi\\Maxi.Citizenship\\Maxi.Citizenship.Shared.Contracts\\Maxi.Citizenship.Shared.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-rc.1.22431.12\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

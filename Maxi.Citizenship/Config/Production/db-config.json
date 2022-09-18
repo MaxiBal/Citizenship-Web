@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Persist Security Info=True;Password=********;Username=postgres;Database=Citizenship;Host=127.0.0.1"
+  }
+}

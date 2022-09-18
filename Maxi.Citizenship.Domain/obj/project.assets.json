@@ -1,0 +1,138 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {
+      "Maxi.Citizenship.Domain.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Maxi.Citizenship.Domain.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Maxi.Citizenship.Domain.Contracts.dll": {}
+        }
+      },
+      "Maxi.Citizenship.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Maxi.Citizenship.Shared.Contracts": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Maxi.Citizenship.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Maxi.Citizenship.Shared.dll": {}
+        }
+      },
+      "Maxi.Citizenship.Shared.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Maxi.Citizenship.Shared.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Maxi.Citizenship.Shared.Contracts.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Maxi.Citizenship.Domain.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../Maxi.Citizenship.Domain.Contracts/Maxi.Citizenship.Domain.Contracts.csproj",
+      "msbuildProject": "../Maxi.Citizenship.Domain.Contracts/Maxi.Citizenship.Domain.Contracts.csproj"
+    },
+    "Maxi.Citizenship.Shared/1.0.0": {
+      "type": "project",
+      "path": "../Maxi.Citizenship.Shared/Maxi.Citizenship.Shared.csproj",
+      "msbuildProject": "../Maxi.Citizenship.Shared/Maxi.Citizenship.Shared.csproj"
+    },
+    "Maxi.Citizenship.Shared.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../Maxi.Citizenship.Shared.Contracts/Maxi.Citizenship.Shared.Contracts.csproj",
+      "msbuildProject": "../Maxi.Citizenship.Shared.Contracts/Maxi.Citizenship.Shared.Contracts.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0": [
+      "Maxi.Citizenship.Domain.Contracts >= 1.0.0",
+      "Maxi.Citizenship.Shared >= 1.0.0",
+      "Maxi.Citizenship.Shared.Contracts >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\balab\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\github\\Maxi\\Maxi.Citizenship\\Maxi.Citizenship.Domain\\Maxi.Citizenship.Domain.csproj",
+      "projectName": "Maxi.Citizenship.Domain",
+      "projectPath": "C:\\github\\Maxi\\Maxi.Citizenship\\Maxi.Citizenship.Domain\\Maxi.Citizenship.Domain.csproj",
+      "packagesPath": "C:\\Users\\balab\\.nuget\\packages\\",
+      "outputPath": "C:\\github\\Maxi\\Maxi.Citizenship\\Maxi.Citizenship.Domain\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\balab\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {
+            "C:\\github\\Maxi\\Maxi.Citizenship\\Maxi.Citizenship.Domain.Contracts\\Maxi.Citizenship.Domain.Contracts.csproj": {
+              "projectPath": "C:\\github\\Maxi\\Maxi.Citizenship\\Maxi.Citizenship.Domain.Contracts\\Maxi.Citizenship.Domain.Contracts.csproj"
+            },
+            "C:\\github\\Maxi\\Maxi.Citizenship\\Maxi.Citizenship.Shared.Contracts\\Maxi.Citizenship.Shared.Contracts.csproj": {
+              "projectPath": "C:\\github\\Maxi\\Maxi.Citizenship\\Maxi.Citizenship.Shared.Contracts\\Maxi.Citizenship.Shared.Contracts.csproj"
+            },
+            "C:\\github\\Maxi\\Maxi.Citizenship\\Maxi.Citizenship.Shared\\Maxi.Citizenship.Shared.csproj": {
+              "projectPath": "C:\\github\\Maxi\\Maxi.Citizenship\\Maxi.Citizenship.Shared\\Maxi.Citizenship.Shared.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-rc.1.22431.12\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

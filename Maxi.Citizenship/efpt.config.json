@@ -1,0 +1,59 @@
+﻿{
+   "CodeGenerationMode": 3,
+   "ContextClassName": "CitizenshipDbContext",
+   "ContextNamespace": "Models",
+   "DefaultDacpacSchema": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": false,
+   "ModelNamespace": "Models",
+   "OutputContextPath": "Models",
+   "OutputPath": "Models\\Entities",
+   "ProjectRootNamespace": "Maxi.Citizenship",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 0,
+   "Tables": [
+      {
+         "Name": "public.question",
+         "ObjectType": 0
+      },
+      {
+         "Name": "public.question_category",
+         "ObjectType": 0
+      },
+      {
+         "Name": "public.answer",
+         "ObjectType": 0
+      },
+      {
+         "Name": "public.question_type",
+         "ObjectType": 0
+      },
+      {
+         "Name": "public.question_sub_category",
+         "ObjectType": 0
+      },
+      {
+         "Name": "public.question_options",
+         "ObjectType": 0
+      }
+   ],
+   "UiHint": ".Citizenship",
+   "UseBoolPropertiesWithoutDefaultSql": true,
+   "UseDatabaseNames": false,
+   "UseDbContextSplitting": false,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": true,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoConstructor": true,
+   "UseNoDefaultConstructor": false,
+   "UseNoNavigations": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UseSchemaFolders": false,
+   "UseSpatial": false
+}

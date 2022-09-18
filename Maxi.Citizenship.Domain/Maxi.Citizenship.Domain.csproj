@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Maxi.Citizenship.Domain.Contracts\Maxi.Citizenship.Domain.Contracts.csproj" />
+    <ProjectReference Include="..\Maxi.Citizenship.Shared.Contracts\Maxi.Citizenship.Shared.Contracts.csproj" />
+    <ProjectReference Include="..\Maxi.Citizenship.Shared\Maxi.Citizenship.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

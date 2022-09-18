@@ -1,0 +1,47 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport position="end"
+               [attr.role]="(isWeb$ | async) ? 'dialog' : 'navigation'"
+               [mode]="(isWeb$ | async) ? 'over' : 'side'"
+               [opened]="(isWeb$ | async) === false">
+    <mat-toolbar>Menu</mat-toolbar>
+    <mat-nav-list (click)="drawer.close()">
+      <a mat-list-item routerLink="#" routerLinkActive="link-active">About</a>
+      <a mat-list-item routerLink="/counter" routerLinkActive="link-active">Get Started</a>
+      <a mat-list-item [routerLink]="['/fetch-data']" routerLinkActive="link-active">Listen and Answer</a>
+      <br />
+      <mat-divider></mat-divider>
+      <a mat-list-item *ngIf="!(authService.UserName$ | async)" href="{{authService.LoginUrl}}">Login</a>
+      <a mat-list-item *ngIf="(authService.UserName$ | async)" href="{{authService.LogoutUrl$ | async}}">Logout</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <div class="app-toolbar">
+        <div>
+          <mat-label>Citizenship</mat-label>
+        </div>
+        <ul>
+          <li *ngIf="authService.UserName$ | async">
+            <mat-icon aria-label="person">person</mat-icon>
+            <span class="user-name">{{authService.UserName$ | async}}</span>
+          </li>
+          <li *ngIf="authService.UserName$ | async">
+            <a href="{{authService.LogoutUrl$ | async}}">Logout</a>
+          </li>
+          <li *ngIf="!(authService.UserName$ | async)">
+            <a href="{{authService.LoginUrl}}">Login</a>
+          </li>
+        </ul>
+      </div>
+      <button type="button"
+              aria-label="Toggle sidenav"
+              mat-icon-button
+              (click)="drawer.toggle()"
+              *ngIf="isWeb$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+    </mat-toolbar>
+    <!-- Add Content Here -->
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
