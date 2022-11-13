@@ -1,0 +1,17 @@
+<mat-toolbar class="navigation-toolbar" [class.navigation-is-mobile]="mobileQuery.matches">
+    <div fxHide.gt-xs *ngIf="sidenavService.canBeOpened">
+        <button mat-icon-button (click)="toggleSidenav();">
+            <mat-icon>menu</mat-icon>
+        </button>
+    </div>
+    <div>
+        <button mat-button routerLink="/">Home</button>
+    </div>
+    <div fxFlex fxLayout fxLayoutAlign="end">
+        <ul fxLayout fxLayoutGap="15px" class="navigation-items">
+            <button mat-flat-button (click)="navigate('/get-started')" color="accent">Get Started</button>
+        </ul>
+    </div>
+</mat-toolbar>
+<mat-divider></mat-divider>
+<div class="navigation-empty" fxShow="false" fxShow.gt-xs="true"></div>

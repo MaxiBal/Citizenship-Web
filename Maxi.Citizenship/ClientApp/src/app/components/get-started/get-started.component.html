@@ -1,0 +1,39 @@
+<section id="getting-started-header" fxLayoutAlign="center start">
+  <h1> Getting Started </h1>
+</section>
+
+<div fxLayoutAlign="center center">
+  <mat-card class="card-side-by-side" >
+    <div fxLayoutAlign="center" class="image-header">
+      <mat-icon class="card-icon" mat-card-sm-image color="accent">local_library</mat-icon>
+    </div>
+    <div fxLayoutAlign="center">
+      <mat-card-title>Learn about the test</mat-card-title>
+    </div>
+    <div fxLayoutAlign="center">
+      <mat-card-subtitle>Learn about the history of the United States</mat-card-subtitle>
+    </div>
+    <mat-card-actions fxLayoutAlign="end">
+      <button mat-flat-button routerLink="/learn" color="accent">Let's Learn</button>
+    </mat-card-actions>
+  </mat-card>
+
+
+  <mat-card class="card-side-by-side">
+
+    <div fxLayoutAlign="center" class="image-header" >
+      <mat-icon class="card-icon" mat-card-sm-image color="accent">quiz</mat-icon>
+    </div>
+
+    <div fxLayoutAlign="center">
+      <mat-card-title>Take a practice test</mat-card-title>
+    </div>
+    <div fxLayoutAlign="center">
+      <mat-card-subtitle>Practice your skills by taking the test</mat-card-subtitle>
+    </div>
+    <mat-card-actions fxLayoutAlign="end">
+      <a mat-flat-button routerLink="/question" color="accent">Let's Practice</a>
+      <!-- <a *ngIf="!(authService.UserName$ | async)" href="{{authService.LoginUrl}}" mat-flat-button color="accent">Let's Practice</a> -->
+    </mat-card-actions>
+  </mat-card>
+</div>

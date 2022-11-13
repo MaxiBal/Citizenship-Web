@@ -10,7 +10,7 @@ public static partial class CitizenshipEndpoints
     {
         app.MapGroup("api/questions")
             .MapCitizenshipApi()
-            .RequireAuthorization()
+            //.RequireAuthorization()
             .AsBffApiEndpoint();
 
         return app;

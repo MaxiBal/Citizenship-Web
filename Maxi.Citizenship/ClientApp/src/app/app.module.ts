@@ -5,13 +5,12 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { NavMenuComponent } from './nav-menu/nav-menu.component';
-import { HomeComponent } from './home/home.component';
-import { CounterComponent } from './counter/counter.component';
-import { FetchDataComponent } from './fetch-data/fetch-data.component';
+import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
+import { HomeComponent } from './components/home/home.component';
+import { FetchDataComponent } from './components/fetch-data/fetch-data.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './modules/material/material.module';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { AuthService } from './modules/core/services/auth.service';
 import { CoreModule } from './modules/core/core.module';
 import { SharedModule } from './modules/shared/shared.module';
@@ -19,6 +18,18 @@ import { FeaturesModule } from './modules/features/features.module';
 import { ServerErrorInterceptor } from './modules/core/interceptors/server-error.interceptor';
 import { HeadersInterceptor } from './modules/core/interceptors/headers.interceptor';
 import { GlobalErrorHandler } from './modules/core/handlers/global-error-handler';
+import { AboutComponent } from './components/home/about/about.component';
+import { HomeHeaderComponent } from './components/home/header/header.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { HeaderComponent } from './components/navigation/header/header.component';
+import { SidenavComponent } from './components/navigation/sidenav/sidenav.component';
+import { SidenavService } from './services/sidenav/sidenav.service';
+import { NotFoundComponent } from './components/not-found/not-found.component';
+import { GetStartedComponent } from './components/get-started/get-started.component';
+import { AppRoutingModule } from './app-routing.module';
+import { QuestionsSidebarComponent } from './modules/questions/components/questions-sidebar/questions-sidebar.component';
+import { InfoComponent } from './components/home/info/info.component';
+import { DirectivesModule } from './modules/directives/directives.module';
 
 @NgModule({
   declarations: [
@@ -26,29 +37,30 @@ import { GlobalErrorHandler } from './modules/core/handlers/global-error-handler
     NavMenuComponent,
     NavBarComponent,
     HomeComponent,
-    CounterComponent,
     FetchDataComponent,
+    AboutComponent,
+    HomeHeaderComponent,
+    HeaderComponent,
+    SidenavComponent,
+    NotFoundComponent,
+    GetStartedComponent,
+    QuestionsSidebarComponent,
+    InfoComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     MaterialModule,
     HttpClientModule,
     FormsModule,
-    RouterModule.forRoot([
-      { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'counter', component: CounterComponent },
-      { path: 'fetch-data', component: FetchDataComponent },
-    ]),
+    AppRoutingModule,
     BrowserAnimationsModule,
     CoreModule,
     SharedModule,
     FeaturesModule,
+    FlexLayoutModule,
+    DirectivesModule,
   ],
   providers: [
-    {
-      provide: ErrorHandler,
-      useClass: GlobalErrorHandler,
-    },
     {
       provide: HTTP_INTERCEPTORS,
       useClass: HeadersInterceptor,
@@ -59,7 +71,9 @@ import { GlobalErrorHandler } from './modules/core/handlers/global-error-handler
       useClass: ServerErrorInterceptor,
       multi: true,
     },
-    AuthService
+
+    AuthService,
+    SidenavService
   ],
   bootstrap: [AppComponent],
 })

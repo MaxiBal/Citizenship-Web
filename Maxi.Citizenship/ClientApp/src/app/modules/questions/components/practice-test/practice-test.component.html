@@ -1,0 +1,17 @@
+<div>
+  <mat-horizontal-stepper isLinear="false">
+
+    <div *ngFor="let q of questionList index as index">
+
+      <mat-step>
+        <ng-template matStepLabel>{{index + 1}}</ng-template>
+        <mat-step-header>Question {{q}}</mat-step-header>
+
+        <app-question [questionIndex]="q"></app-question>
+
+      </mat-step>
+
+    </div>
+
+  </mat-horizontal-stepper>
+</div>

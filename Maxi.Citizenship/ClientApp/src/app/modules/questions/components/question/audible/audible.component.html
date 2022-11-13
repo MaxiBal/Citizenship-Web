@@ -1,0 +1,8 @@
+<div *ngIf="!isUserSpeaking">
+  <button mat-icon-button (click)="startRecording()"><mat-icon>mic</mat-icon></button>
+</div>
+<div *ngIf="isUserSpeaking">
+  <button mat-icon-button (click)="stopRecording()"><mat-icon>settings_voice</mat-icon></button>
+</div>
+
+<!-- <h3>You said: {{text}}</h3> -->

@@ -10,3 +10,15 @@ C:\github\Maxi\Maxi.Citizenship\Maxi.Citizenship.Shared.Contracts\obj\Debug\net7
 C:\github\Maxi\Maxi.Citizenship\Maxi.Citizenship.Shared.Contracts\obj\Debug\net7.0\refint\Maxi.Citizenship.Shared.Contracts.dll
 C:\github\Maxi\Maxi.Citizenship\Maxi.Citizenship.Shared.Contracts\obj\Debug\net7.0\Maxi.Citizenship.Shared.Contracts.pdb
 C:\github\Maxi\Maxi.Citizenship\Maxi.Citizenship.Shared.Contracts\obj\Debug\net7.0\ref\Maxi.Citizenship.Shared.Contracts.dll
+C:\apps\citizenship-app\Citizenship-Web\Maxi.Citizenship.Shared.Contracts\bin\Debug\net7.0\Maxi.Citizenship.Shared.Contracts.deps.json
+C:\apps\citizenship-app\Citizenship-Web\Maxi.Citizenship.Shared.Contracts\bin\Debug\net7.0\Maxi.Citizenship.Shared.Contracts.dll
+C:\apps\citizenship-app\Citizenship-Web\Maxi.Citizenship.Shared.Contracts\bin\Debug\net7.0\Maxi.Citizenship.Shared.Contracts.pdb
+C:\apps\citizenship-app\Citizenship-Web\Maxi.Citizenship.Shared.Contracts\obj\Debug\net7.0\Maxi.Citizenship.Shared.Contracts.csproj.AssemblyReference.cache
+C:\apps\citizenship-app\Citizenship-Web\Maxi.Citizenship.Shared.Contracts\obj\Debug\net7.0\Maxi.Citizenship.Shared.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\apps\citizenship-app\Citizenship-Web\Maxi.Citizenship.Shared.Contracts\obj\Debug\net7.0\Maxi.Citizenship.Shared.Contracts.AssemblyInfoInputs.cache
+C:\apps\citizenship-app\Citizenship-Web\Maxi.Citizenship.Shared.Contracts\obj\Debug\net7.0\Maxi.Citizenship.Shared.Contracts.AssemblyInfo.cs
+C:\apps\citizenship-app\Citizenship-Web\Maxi.Citizenship.Shared.Contracts\obj\Debug\net7.0\Maxi.Citizenship.Shared.Contracts.csproj.CoreCompileInputs.cache
+C:\apps\citizenship-app\Citizenship-Web\Maxi.Citizenship.Shared.Contracts\obj\Debug\net7.0\Maxi.Citizenship.Shared.Contracts.dll
+C:\apps\citizenship-app\Citizenship-Web\Maxi.Citizenship.Shared.Contracts\obj\Debug\net7.0\refint\Maxi.Citizenship.Shared.Contracts.dll
+C:\apps\citizenship-app\Citizenship-Web\Maxi.Citizenship.Shared.Contracts\obj\Debug\net7.0\Maxi.Citizenship.Shared.Contracts.pdb
+C:\apps\citizenship-app\Citizenship-Web\Maxi.Citizenship.Shared.Contracts\obj\Debug\net7.0\ref\Maxi.Citizenship.Shared.Contracts.dll

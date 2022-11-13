@@ -1,0 +1,24 @@
+<app-questions-template></app-questions-template>
+
+<!--<div fxLayoutAlign="center" class="heading">
+  <h1>Take a practice test</h1>
+</div>
+<div fxLayoutAlign="center" class="action">
+  <button mat-button routerLink="practice-test">Take one now</button>
+</div>-->
+
+<div fxLayout="row wrap" fxLayoutAlign="space-evenly center" fxLayoutGap="1rem">
+  <div *ngFor="let question of questions index as i" >
+      <mat-card class="question-card">
+          <mat-card-title>
+              Question #{{question.id}}
+          </mat-card-title>
+          <mat-card-content>
+              <p>{{question.prompt}}</p>
+          </mat-card-content>
+          <mat-card-actions>
+              <button mat-button (click)="navigateToQuestion(question.id)">Go To Question #{{question.id}}</button>
+          </mat-card-actions>
+      </mat-card>
+  </div>
+</div>

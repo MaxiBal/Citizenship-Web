@@ -1,0 +1,60 @@
+<!--<app-questions-template></app-questions-template>-->
+<div>
+    <div fxLayout="row" fxLayoutAlign="center">
+        <div>
+          <mat-card>
+              <!-- Question Found-->
+              <div *ngIf="question else notFound">
+                  <mat-card-title ><div *ngIf="showPrompt">{{question.prompt}}</div><button mat-icon-button (click)="speakPrompt();"><mat-icon>volume_up</mat-icon></button></mat-card-title>
+                  <mat-card-subtitle>Question Number #{{questionIndex}}</mat-card-subtitle>
+                  <mat-card-content>
+                    <div *ngIf="getAudible() else inaudible" fxLayoutAlign="center">
+                      <question-audible [questionId]="questionIndex"></question-audible>
+                    </div>
+                    <ng-template #inaudible>
+                      <questions-written
+                        [questionId]="questionIndex"
+                        ></questions-written>
+                    </ng-template>
+
+                    <div *ngIf="questionDataService.answered | async" fxLayoutAlign="center" @insertRemoveTrigger>
+                      <div *ngIf="questionDataService.correct | async; else incorrect">
+                          <div>
+                              <mat-icon class="color-correct">check</mat-icon> - You got it right!
+                          </div>
+                      </div>
+                      <ng-template #incorrect>
+                          <div class="text-red" color="warn">
+                              <mat-icon color="warn">error</mat-icon> - You got it wrong.
+                          </div>
+                      </ng-template>
+                    </div>
+
+                    <div fxLayoutAlign="end" *ngIf="getAudible()" @removeTrigger>
+                      <p>Can't talk right now? Switch to <button style="padding: 0" mat-flat-button (click)="switchAudible()">written.</button></p>
+                    </div>
+                  </mat-card-content>
+                  <mat-card-actions>
+                    <mat-slide-toggle [(ngModel)]="showPrompt">Show Question Prompt</mat-slide-toggle>
+                      <div *ngIf="questionDataService.answered | async">
+                        <div fxLayoutAlign="end">
+                          <button mat-button (click)="learnMore()">Learn More</button>
+                          <button mat-button (click)="nextQuestion()">Next Question</button>
+                        </div>
+                      </div>
+                  </mat-card-actions>
+              </div>
+              <!-- Question Not Found -->
+              <ng-template #notFound>
+                  <mat-card-title>Oops...</mat-card-title>
+                  <mat-card-content>The question you requested could not be found.  Please try a different question.</mat-card-content>
+                  <mat-card-actions>
+                    <div fxLayoutAlign="end">
+                      <button mat-button (click)="gotoQuestionHome()">Go Back</button>
+                    </div>
+                  </mat-card-actions>
+              </ng-template>
+          </mat-card>
+        </div>
+    </div>
+</div>

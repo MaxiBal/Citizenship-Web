@@ -1,0 +1,58 @@
+[2022-10-29 19:33:15.538 -04:00  WRN]  You do not have a valid license key for the Duende software. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please start a conversation with us: https://duendesoftware.com/contact
+[2022-10-29 19:33:15.721 -04:00  INF]  User profile is available. Using 'C:\Users\Maxi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-10-29 19:33:16.095 -04:00  INF]  Now listening on: https://localhost:7117
+[2022-10-29 19:33:16.096 -04:00  INF]  Now listening on: http://localhost:5014
+[2022-10-29 19:33:16.096 -04:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-10-29 19:33:16.096 -04:00  INF]  Hosting environment: Development
+[2022-10-29 19:33:16.096 -04:00  INF]  Content root path: C:\apps\citizenship-app\Citizenship-Web\Maxi.Citizenship
+[2022-10-29 19:33:16.634 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-10-29 19:33:20.874 -04:00  INF]  No SPA development server running at https://localhost:44485 found.
+[2022-10-29 19:33:21.006 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-10-29 19:33:21.012 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 4381.2997ms
+[2022-10-29 19:33:21.177 -04:00  INF]  Request starting HTTP/3 GET https://localhost:7117/favicon.ico - -
+[2022-10-29 19:33:21.225 -04:00  INF]  No cached response available for this request.
+[2022-10-29 19:33:21.295 -04:00  INF]  Sending file. Request path: '/favicon.ico'. Physical path: 'C:\apps\citizenship-app\Citizenship-Web\Maxi.Citizenship\wwwroot\favicon.ico'
+[2022-10-29 19:33:21.296 -04:00  INF]  The response could not be cached for this request.
+[2022-10-29 19:33:21.298 -04:00  INF]  Request finished HTTP/3 GET https://localhost:7117/favicon.ico - - - 200 5430 image/x-icon 120.6858ms
+[2022-10-29 19:33:24.055 -04:00  INF]  Request starting HTTP/3 GET https://localhost:7117/ - -
+[2022-10-29 19:33:28.145 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-10-29 19:33:28.146 -04:00  INF]  Request finished HTTP/3 GET https://localhost:7117/ - - - 200 - text/html 4091.1136ms
+[2022-10-29 19:33:31.181 -04:00  INF]  Request starting HTTP/3 GET https://localhost:7117/ - -
+[2022-10-29 19:33:32.826 -04:00  INF]  SPA proxy is ready. Redirecting to https://localhost:44485.
+[2022-10-29 19:33:32.827 -04:00  INF]  SPA development server running at 'https://localhost:44485'
+[2022-10-29 19:33:32.827 -04:00  INF]  Request finished HTTP/3 GET https://localhost:7117/ - - - 302 0 - 1645.5716ms
+[2022-10-29 19:33:35.267 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/api/questions - -
+[2022-10-29 19:33:35.267 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/bff/user - -
+[2022-10-29 19:33:35.268 -04:00  INF]  No cached response available for this request.
+[2022-10-29 19:33:35.268 -04:00  INF]  No cached response available for this request.
+[2022-10-29 19:33:35.819 -04:00  INF]  Executing endpoint 'HTTP: GET /bff/user'
+[2022-10-29 19:33:35.819 -04:00  INF]  Executing endpoint 'HTTP: GET api/questions/ => List'
+[2022-10-29 19:33:35.821 -04:00  INF]  Executed endpoint 'HTTP: GET /bff/user'
+[2022-10-29 19:33:35.822 -04:00  INF]  The response could not be cached for this request.
+[2022-10-29 19:33:35.851 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/bff/user - - - 401 0 - 584.6129ms
+[2022-10-29 19:33:35.865 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/bff/user - -
+[2022-10-29 19:33:35.866 -04:00  INF]  No cached response available for this request.
+[2022-10-29 19:33:35.869 -04:00  INF]  Executing endpoint 'HTTP: GET /bff/user'
+[2022-10-29 19:33:35.870 -04:00  INF]  Executed endpoint 'HTTP: GET /bff/user'
+[2022-10-29 19:33:35.870 -04:00  INF]  The response could not be cached for this request.
+[2022-10-29 19:33:35.870 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/bff/user - - - 401 0 - 4.7232ms
+[2022-10-29 19:33:36.741 -04:00  INF]  Setting HTTP status code 200.
+[2022-10-29 19:33:36.743 -04:00  INF]  Writing value of type 'IQueryable`1' as Json.
+[2022-10-29 19:33:37.208 -04:00  INF]  Executed DbCommand (31ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT q.id::int AS "Id", q.prompt AS "Prompt", q1.app_name AS "Category", q1.id::int AS "CategoryId", q0.app_name AS "SubCategory", q0.id::int AS "SubCategoryId", q2.app_name AS "Type", q2.id::int AS "TypeId", q.has_asterisk AS "HasAsterisk", q.image_url AS "ImageUrl"
+FROM question AS q
+INNER JOIN question_sub_category AS q0 ON q.question_sub_category_id = q0.id
+INNER JOIN question_category AS q1 ON q0.question_category_id = q1.id
+INNER JOIN question_type AS q2 ON q.question_type_id = q2.id
+[2022-10-29 19:33:37.294 -04:00  INF]  Executed endpoint 'HTTP: GET api/questions/ => List'
+[2022-10-29 19:33:37.295 -04:00  INF]  The response could not be cached for this request.
+[2022-10-29 19:33:37.299 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/api/questions - - - 200 - application/json;+charset=utf-8 2032.7439ms
+[2022-10-29 19:34:02.903 -04:00  FTL]  Unexpected exception in HttpConnection.ProcessRequestsAsync.
+System.Net.Quic.QuicException: An internal error has occurred. StreamShutdown failed: QUIC_STATUS_INVALID_PARAMETER
+   at System.Net.Quic.ThrowHelper.ThrowIfMsQuicError(Int32 status, String message)
+   at System.Net.Quic.QuicStream.Abort(QuicAbortDirection abortDirection, Int64 errorCode)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.Internal.QuicStreamContext.Abort(ConnectionAbortedException abortReason)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http3.Http3FrameWriter.Abort(ConnectionAbortedException error)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http3.Http3ControlStream.Abort(ConnectionAbortedException abortReason, Http3ErrorCode errorCode)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http3.Http3Connection.ProcessRequestsAsync[TContext](IHttpApplication`1 application)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.HttpConnection.ProcessRequestsAsync[TContext](IHttpApplication`1 httpApplication)

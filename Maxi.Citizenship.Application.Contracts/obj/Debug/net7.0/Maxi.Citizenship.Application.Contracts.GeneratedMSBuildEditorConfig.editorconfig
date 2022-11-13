@@ -7,4 +7,4 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Maxi.Citizenship.Application.Contracts
-build_property.ProjectDir = C:\github\Maxi\Maxi.Citizenship\Maxi.Citizenship.Application.Contracts\
+build_property.ProjectDir = C:\apps\citizenship-app\Citizenship-Web\Maxi.Citizenship.Application.Contracts\

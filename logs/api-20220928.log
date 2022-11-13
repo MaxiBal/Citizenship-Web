@@ -1,0 +1,577 @@
+[2022-09-28 21:37:32.833 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/api/questions/1/answers - -
+[2022-09-28 21:37:32.849 -04:00  INF]  No cached response available for this request.
+[2022-09-28 21:37:32.899 -04:00  INF]  Executing endpoint 'HTTP: GET api/questions/{questionId:int}/answers => ListAnswers'
+[2022-09-28 21:37:32.904 -04:00  INF]  Setting HTTP status code 200.
+[2022-09-28 21:37:32.904 -04:00  INF]  Writing value of type 'IOrderedQueryable`1' as Json.
+[2022-09-28 21:37:32.988 -04:00  INF]  Executed DbCommand (12ms) [Parameters=[@__questionId_0='?' (DbType = Int16)], CommandType='"Text"', CommandTimeout='30']
+SELECT a.id AS "Id", a.question_id AS "QuestionId", a.key AS "Key", a.addl_info AS "AddlInfo", a.img_url AS "ImgUrl", a.is_supplemental AS "IsSupplemental", a.sort AS "Sort"
+FROM answer AS a
+WHERE a.question_id = @__questionId_0
+ORDER BY a.sort
+[2022-09-28 21:37:32.989 -04:00  INF]  Executed endpoint 'HTTP: GET api/questions/{questionId:int}/answers => ListAnswers'
+[2022-09-28 21:37:32.989 -04:00  INF]  The response could not be cached for this request.
+[2022-09-28 21:37:32.990 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/api/questions/1/answers - - - 200 - application/json;+charset=utf-8 157.6278ms
+[2022-09-28 21:38:09.196 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/api/questions - -
+[2022-09-28 21:38:09.196 -04:00  INF]  No cached response available for this request.
+[2022-09-28 21:38:09.197 -04:00  INF]  Executing endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-28 21:38:09.199 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/bff/user - -
+[2022-09-28 21:38:09.199 -04:00  INF]  No cached response available for this request.
+[2022-09-28 21:38:09.218 -04:00  INF]  Executing endpoint 'HTTP: GET /bff/user'
+[2022-09-28 21:38:09.252 -04:00  INF]  Executed endpoint 'HTTP: GET /bff/user'
+[2022-09-28 21:38:09.252 -04:00  INF]  The response could not be cached for this request.
+[2022-09-28 21:38:09.252 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/bff/user - - - 200 - application/json 53.3770ms
+[2022-09-28 21:38:09.252 -04:00  INF]  Setting HTTP status code 200.
+[2022-09-28 21:38:09.253 -04:00  INF]  Writing value of type 'IQueryable`1' as Json.
+[2022-09-28 21:38:09.293 -04:00  INF]  Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT q.id::int AS "Id", q.prompt AS "Prompt", q1.app_name AS "Category", q1.id::int AS "CategoryId", q0.app_name AS "SubCategory", q0.id::int AS "SubCategoryId", q2.app_name AS "Type", q2.id::int AS "TypeId", q.has_asterisk AS "HasAsterisk", q.image_url AS "ImageUrl"
+FROM question AS q
+INNER JOIN question_sub_category AS q0 ON q.question_sub_category_id = q0.id
+INNER JOIN question_category AS q1 ON q0.question_category_id = q1.id
+INNER JOIN question_type AS q2 ON q.question_type_id = q2.id
+[2022-09-28 21:38:09.316 -04:00  INF]  Executed endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-28 21:38:09.316 -04:00  INF]  The response could not be cached for this request.
+[2022-09-28 21:38:09.317 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/api/questions - - - 200 - application/json;+charset=utf-8 122.5796ms
+[2022-09-28 21:38:09.582 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/api/questions - -
+[2022-09-28 21:38:09.583 -04:00  INF]  No cached response available for this request.
+[2022-09-28 21:38:09.584 -04:00  INF]  Executing endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-28 21:38:09.586 -04:00  INF]  Setting HTTP status code 200.
+[2022-09-28 21:38:09.586 -04:00  INF]  Writing value of type 'IQueryable`1' as Json.
+[2022-09-28 21:38:09.669 -04:00  INF]  Executed DbCommand (74ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT q.id::int AS "Id", q.prompt AS "Prompt", q1.app_name AS "Category", q1.id::int AS "CategoryId", q0.app_name AS "SubCategory", q0.id::int AS "SubCategoryId", q2.app_name AS "Type", q2.id::int AS "TypeId", q.has_asterisk AS "HasAsterisk", q.image_url AS "ImageUrl"
+FROM question AS q
+INNER JOIN question_sub_category AS q0 ON q.question_sub_category_id = q0.id
+INNER JOIN question_category AS q1 ON q0.question_category_id = q1.id
+INNER JOIN question_type AS q2 ON q.question_type_id = q2.id
+[2022-09-28 21:38:09.700 -04:00  INF]  Executed endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-28 21:38:09.701 -04:00  INF]  The response could not be cached for this request.
+[2022-09-28 21:38:09.701 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/api/questions - - - 200 - application/json;+charset=utf-8 118.6183ms
+[2022-09-28 21:38:09.785 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/api/questions/1/answers - -
+[2022-09-28 21:38:09.785 -04:00  INF]  No cached response available for this request.
+[2022-09-28 21:38:09.786 -04:00  INF]  Executing endpoint 'HTTP: GET api/questions/{questionId:int}/answers => ListAnswers'
+[2022-09-28 21:38:09.787 -04:00  INF]  Setting HTTP status code 200.
+[2022-09-28 21:38:09.787 -04:00  INF]  Writing value of type 'IOrderedQueryable`1' as Json.
+[2022-09-28 21:38:09.819 -04:00  INF]  Executed DbCommand (31ms) [Parameters=[@__questionId_0='?' (DbType = Int16)], CommandType='"Text"', CommandTimeout='30']
+SELECT a.id AS "Id", a.question_id AS "QuestionId", a.key AS "Key", a.addl_info AS "AddlInfo", a.img_url AS "ImgUrl", a.is_supplemental AS "IsSupplemental", a.sort AS "Sort"
+FROM answer AS a
+WHERE a.question_id = @__questionId_0
+ORDER BY a.sort
+[2022-09-28 21:38:09.829 -04:00  INF]  Executed endpoint 'HTTP: GET api/questions/{questionId:int}/answers => ListAnswers'
+[2022-09-28 21:38:09.829 -04:00  INF]  The response could not be cached for this request.
+[2022-09-28 21:38:09.830 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/api/questions/1/answers - - - 200 - application/json;+charset=utf-8 44.7014ms
+[2022-09-28 21:38:12.281 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/api/questions - -
+[2022-09-28 21:38:12.282 -04:00  INF]  No cached response available for this request.
+[2022-09-28 21:38:12.283 -04:00  INF]  Executing endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-28 21:38:12.283 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/bff/user - -
+[2022-09-28 21:38:12.283 -04:00  INF]  No cached response available for this request.
+[2022-09-28 21:38:12.284 -04:00  INF]  Executing endpoint 'HTTP: GET /bff/user'
+[2022-09-28 21:38:12.284 -04:00  INF]  Setting HTTP status code 200.
+[2022-09-28 21:38:12.284 -04:00  INF]  Writing value of type 'IQueryable`1' as Json.
+[2022-09-28 21:38:12.285 -04:00  INF]  Executed endpoint 'HTTP: GET /bff/user'
+[2022-09-28 21:38:12.285 -04:00  INF]  The response could not be cached for this request.
+[2022-09-28 21:38:12.285 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/bff/user - - - 200 - application/json 1.9884ms
+[2022-09-28 21:38:12.292 -04:00  INF]  Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT q.id::int AS "Id", q.prompt AS "Prompt", q1.app_name AS "Category", q1.id::int AS "CategoryId", q0.app_name AS "SubCategory", q0.id::int AS "SubCategoryId", q2.app_name AS "Type", q2.id::int AS "TypeId", q.has_asterisk AS "HasAsterisk", q.image_url AS "ImageUrl"
+FROM question AS q
+INNER JOIN question_sub_category AS q0 ON q.question_sub_category_id = q0.id
+INNER JOIN question_category AS q1 ON q0.question_category_id = q1.id
+INNER JOIN question_type AS q2 ON q.question_type_id = q2.id
+[2022-09-28 21:38:12.300 -04:00  INF]  Executed endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-28 21:38:12.301 -04:00  INF]  The response could not be cached for this request.
+[2022-09-28 21:38:12.301 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/api/questions - - - 200 - application/json;+charset=utf-8 20.4790ms
+[2022-09-28 21:38:12.454 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/api/questions - -
+[2022-09-28 21:38:12.455 -04:00  INF]  No cached response available for this request.
+[2022-09-28 21:38:12.456 -04:00  INF]  Executing endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-28 21:38:12.457 -04:00  INF]  Setting HTTP status code 200.
+[2022-09-28 21:38:12.457 -04:00  INF]  Writing value of type 'IQueryable`1' as Json.
+[2022-09-28 21:38:12.462 -04:00  INF]  Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT q.id::int AS "Id", q.prompt AS "Prompt", q1.app_name AS "Category", q1.id::int AS "CategoryId", q0.app_name AS "SubCategory", q0.id::int AS "SubCategoryId", q2.app_name AS "Type", q2.id::int AS "TypeId", q.has_asterisk AS "HasAsterisk", q.image_url AS "ImageUrl"
+FROM question AS q
+INNER JOIN question_sub_category AS q0 ON q.question_sub_category_id = q0.id
+INNER JOIN question_category AS q1 ON q0.question_category_id = q1.id
+INNER JOIN question_type AS q2 ON q.question_type_id = q2.id
+[2022-09-28 21:38:12.468 -04:00  INF]  Executed endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-28 21:38:12.468 -04:00  INF]  The response could not be cached for this request.
+[2022-09-28 21:38:12.469 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/api/questions - - - 200 - application/json;+charset=utf-8 14.2109ms
+[2022-09-28 21:38:12.556 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/api/questions/1/answers - -
+[2022-09-28 21:38:12.556 -04:00  INF]  No cached response available for this request.
+[2022-09-28 21:38:12.557 -04:00  INF]  Executing endpoint 'HTTP: GET api/questions/{questionId:int}/answers => ListAnswers'
+[2022-09-28 21:38:12.557 -04:00  INF]  Setting HTTP status code 200.
+[2022-09-28 21:38:12.558 -04:00  INF]  Writing value of type 'IOrderedQueryable`1' as Json.
+[2022-09-28 21:38:12.564 -04:00  INF]  Executed DbCommand (6ms) [Parameters=[@__questionId_0='?' (DbType = Int16)], CommandType='"Text"', CommandTimeout='30']
+SELECT a.id AS "Id", a.question_id AS "QuestionId", a.key AS "Key", a.addl_info AS "AddlInfo", a.img_url AS "ImgUrl", a.is_supplemental AS "IsSupplemental", a.sort AS "Sort"
+FROM answer AS a
+WHERE a.question_id = @__questionId_0
+ORDER BY a.sort
+[2022-09-28 21:38:12.568 -04:00  INF]  Executed endpoint 'HTTP: GET api/questions/{questionId:int}/answers => ListAnswers'
+[2022-09-28 21:38:12.570 -04:00  INF]  The response could not be cached for this request.
+[2022-09-28 21:38:12.570 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/api/questions/1/answers - - - 200 - application/json;+charset=utf-8 13.8439ms
+[2022-09-28 21:38:43.780 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/bff/user - -
+[2022-09-28 21:38:43.782 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/api/questions - -
+[2022-09-28 21:38:43.782 -04:00  INF]  No cached response available for this request.
+[2022-09-28 21:38:43.782 -04:00  INF]  No cached response available for this request.
+[2022-09-28 21:38:43.782 -04:00  INF]  Executing endpoint 'HTTP: GET /bff/user'
+[2022-09-28 21:38:43.782 -04:00  INF]  Executing endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-28 21:38:43.782 -04:00  INF]  Executed endpoint 'HTTP: GET /bff/user'
+[2022-09-28 21:38:43.782 -04:00  INF]  The response could not be cached for this request.
+[2022-09-28 21:38:43.782 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/bff/user - - - 200 - application/json 2.1041ms
+[2022-09-28 21:38:43.787 -04:00  INF]  Setting HTTP status code 200.
+[2022-09-28 21:38:43.787 -04:00  INF]  Writing value of type 'IQueryable`1' as Json.
+[2022-09-28 21:38:43.791 -04:00  INF]  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT q.id::int AS "Id", q.prompt AS "Prompt", q1.app_name AS "Category", q1.id::int AS "CategoryId", q0.app_name AS "SubCategory", q0.id::int AS "SubCategoryId", q2.app_name AS "Type", q2.id::int AS "TypeId", q.has_asterisk AS "HasAsterisk", q.image_url AS "ImageUrl"
+FROM question AS q
+INNER JOIN question_sub_category AS q0 ON q.question_sub_category_id = q0.id
+INNER JOIN question_category AS q1 ON q0.question_category_id = q1.id
+INNER JOIN question_type AS q2 ON q.question_type_id = q2.id
+[2022-09-28 21:38:43.793 -04:00  INF]  Executed endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-28 21:38:43.793 -04:00  INF]  The response could not be cached for this request.
+[2022-09-28 21:38:43.794 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/api/questions - - - 200 - application/json;+charset=utf-8 11.6685ms
+[2022-09-28 21:38:43.806 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/api/questions - -
+[2022-09-28 21:38:43.806 -04:00  INF]  No cached response available for this request.
+[2022-09-28 21:38:43.806 -04:00  INF]  Executing endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-28 21:38:43.807 -04:00  INF]  Setting HTTP status code 200.
+[2022-09-28 21:38:43.807 -04:00  INF]  Writing value of type 'IQueryable`1' as Json.
+[2022-09-28 21:38:43.810 -04:00  INF]  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT q.id::int AS "Id", q.prompt AS "Prompt", q1.app_name AS "Category", q1.id::int AS "CategoryId", q0.app_name AS "SubCategory", q0.id::int AS "SubCategoryId", q2.app_name AS "Type", q2.id::int AS "TypeId", q.has_asterisk AS "HasAsterisk", q.image_url AS "ImageUrl"
+FROM question AS q
+INNER JOIN question_sub_category AS q0 ON q.question_sub_category_id = q0.id
+INNER JOIN question_category AS q1 ON q0.question_category_id = q1.id
+INNER JOIN question_type AS q2 ON q.question_type_id = q2.id
+[2022-09-28 21:38:43.812 -04:00  INF]  Executed endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-28 21:38:43.812 -04:00  INF]  The response could not be cached for this request.
+[2022-09-28 21:38:43.812 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/api/questions - - - 200 - application/json;+charset=utf-8 6.3702ms
+[2022-09-28 21:38:43.836 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/api/questions/1/answers - -
+[2022-09-28 21:38:43.837 -04:00  INF]  No cached response available for this request.
+[2022-09-28 21:38:43.837 -04:00  INF]  Executing endpoint 'HTTP: GET api/questions/{questionId:int}/answers => ListAnswers'
+[2022-09-28 21:38:43.837 -04:00  INF]  Setting HTTP status code 200.
+[2022-09-28 21:38:43.837 -04:00  INF]  Writing value of type 'IOrderedQueryable`1' as Json.
+[2022-09-28 21:38:43.839 -04:00  INF]  Executed DbCommand (1ms) [Parameters=[@__questionId_0='?' (DbType = Int16)], CommandType='"Text"', CommandTimeout='30']
+SELECT a.id AS "Id", a.question_id AS "QuestionId", a.key AS "Key", a.addl_info AS "AddlInfo", a.img_url AS "ImgUrl", a.is_supplemental AS "IsSupplemental", a.sort AS "Sort"
+FROM answer AS a
+WHERE a.question_id = @__questionId_0
+ORDER BY a.sort
+[2022-09-28 21:38:43.840 -04:00  INF]  Executed endpoint 'HTTP: GET api/questions/{questionId:int}/answers => ListAnswers'
+[2022-09-28 21:38:43.840 -04:00  INF]  The response could not be cached for this request.
+[2022-09-28 21:38:43.840 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/api/questions/1/answers - - - 200 - application/json;+charset=utf-8 4.0407ms
+[2022-09-28 21:38:47.049 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/api/questions - -
+[2022-09-28 21:38:47.049 -04:00  INF]  No cached response available for this request.
+[2022-09-28 21:38:47.050 -04:00  INF]  Executing endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-28 21:38:47.050 -04:00  INF]  Setting HTTP status code 200.
+[2022-09-28 21:38:47.050 -04:00  INF]  Writing value of type 'IQueryable`1' as Json.
+[2022-09-28 21:38:47.053 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/bff/user - -
+[2022-09-28 21:38:47.053 -04:00  INF]  No cached response available for this request.
+[2022-09-28 21:38:47.054 -04:00  INF]  Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT q.id::int AS "Id", q.prompt AS "Prompt", q1.app_name AS "Category", q1.id::int AS "CategoryId", q0.app_name AS "SubCategory", q0.id::int AS "SubCategoryId", q2.app_name AS "Type", q2.id::int AS "TypeId", q.has_asterisk AS "HasAsterisk", q.image_url AS "ImageUrl"
+FROM question AS q
+INNER JOIN question_sub_category AS q0 ON q.question_sub_category_id = q0.id
+INNER JOIN question_category AS q1 ON q0.question_category_id = q1.id
+INNER JOIN question_type AS q2 ON q.question_type_id = q2.id
+[2022-09-28 21:38:47.055 -04:00  INF]  Executing endpoint 'HTTP: GET /bff/user'
+[2022-09-28 21:38:47.055 -04:00  INF]  Executed endpoint 'HTTP: GET /bff/user'
+[2022-09-28 21:38:47.055 -04:00  INF]  The response could not be cached for this request.
+[2022-09-28 21:38:47.055 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/bff/user - - - 200 - application/json 3.1505ms
+[2022-09-28 21:38:47.055 -04:00  INF]  Executed endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-28 21:38:47.059 -04:00  INF]  The response could not be cached for this request.
+[2022-09-28 21:38:47.060 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/api/questions - - - 200 - application/json;+charset=utf-8 10.4527ms
+[2022-09-28 21:38:47.081 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/api/questions - -
+[2022-09-28 21:38:47.081 -04:00  INF]  No cached response available for this request.
+[2022-09-28 21:38:47.081 -04:00  INF]  Executing endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-28 21:38:47.082 -04:00  INF]  Setting HTTP status code 200.
+[2022-09-28 21:38:47.082 -04:00  INF]  Writing value of type 'IQueryable`1' as Json.
+[2022-09-28 21:38:47.084 -04:00  INF]  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT q.id::int AS "Id", q.prompt AS "Prompt", q1.app_name AS "Category", q1.id::int AS "CategoryId", q0.app_name AS "SubCategory", q0.id::int AS "SubCategoryId", q2.app_name AS "Type", q2.id::int AS "TypeId", q.has_asterisk AS "HasAsterisk", q.image_url AS "ImageUrl"
+FROM question AS q
+INNER JOIN question_sub_category AS q0 ON q.question_sub_category_id = q0.id
+INNER JOIN question_category AS q1 ON q0.question_category_id = q1.id
+INNER JOIN question_type AS q2 ON q.question_type_id = q2.id
+[2022-09-28 21:38:47.085 -04:00  INF]  Executed endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-28 21:38:47.085 -04:00  INF]  The response could not be cached for this request.
+[2022-09-28 21:38:47.085 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/api/questions - - - 200 - application/json;+charset=utf-8 4.2774ms
+[2022-09-28 21:38:47.222 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/api/questions/1/answers - -
+[2022-09-28 21:38:47.222 -04:00  INF]  No cached response available for this request.
+[2022-09-28 21:38:47.222 -04:00  INF]  Executing endpoint 'HTTP: GET api/questions/{questionId:int}/answers => ListAnswers'
+[2022-09-28 21:38:47.222 -04:00  INF]  Setting HTTP status code 200.
+[2022-09-28 21:38:47.222 -04:00  INF]  Writing value of type 'IOrderedQueryable`1' as Json.
+[2022-09-28 21:38:47.224 -04:00  INF]  Executed DbCommand (2ms) [Parameters=[@__questionId_0='?' (DbType = Int16)], CommandType='"Text"', CommandTimeout='30']
+SELECT a.id AS "Id", a.question_id AS "QuestionId", a.key AS "Key", a.addl_info AS "AddlInfo", a.img_url AS "ImgUrl", a.is_supplemental AS "IsSupplemental", a.sort AS "Sort"
+FROM answer AS a
+WHERE a.question_id = @__questionId_0
+ORDER BY a.sort
+[2022-09-28 21:38:47.226 -04:00  INF]  Executed endpoint 'HTTP: GET api/questions/{questionId:int}/answers => ListAnswers'
+[2022-09-28 21:38:47.226 -04:00  INF]  The response could not be cached for this request.
+[2022-09-28 21:38:47.226 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/api/questions/1/answers - - - 200 - application/json;+charset=utf-8 4.4193ms
+[2022-09-28 21:39:09.222 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/bff/user - -
+[2022-09-28 21:39:09.222 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/api/questions - -
+[2022-09-28 21:39:09.222 -04:00  INF]  No cached response available for this request.
+[2022-09-28 21:39:09.222 -04:00  INF]  No cached response available for this request.
+[2022-09-28 21:39:09.223 -04:00  INF]  Executing endpoint 'HTTP: GET /bff/user'
+[2022-09-28 21:39:09.246 -04:00  INF]  Executed endpoint 'HTTP: GET /bff/user'
+[2022-09-28 21:39:09.246 -04:00  INF]  Executing endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-28 21:39:09.246 -04:00  INF]  The response could not be cached for this request.
+[2022-09-28 21:39:09.246 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/bff/user - - - 200 - application/json 24.4105ms
+[2022-09-28 21:39:09.247 -04:00  INF]  Setting HTTP status code 200.
+[2022-09-28 21:39:09.247 -04:00  INF]  Writing value of type 'IQueryable`1' as Json.
+[2022-09-28 21:39:09.253 -04:00  INF]  Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT q.id::int AS "Id", q.prompt AS "Prompt", q1.app_name AS "Category", q1.id::int AS "CategoryId", q0.app_name AS "SubCategory", q0.id::int AS "SubCategoryId", q2.app_name AS "Type", q2.id::int AS "TypeId", q.has_asterisk AS "HasAsterisk", q.image_url AS "ImageUrl"
+FROM question AS q
+INNER JOIN question_sub_category AS q0 ON q.question_sub_category_id = q0.id
+INNER JOIN question_category AS q1 ON q0.question_category_id = q1.id
+INNER JOIN question_type AS q2 ON q.question_type_id = q2.id
+[2022-09-28 21:39:09.258 -04:00  INF]  Executed endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-28 21:39:09.258 -04:00  INF]  The response could not be cached for this request.
+[2022-09-28 21:39:09.258 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/api/questions - - - 200 - application/json;+charset=utf-8 35.9780ms
+[2022-09-28 21:39:09.268 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/api/questions - -
+[2022-09-28 21:39:09.268 -04:00  INF]  No cached response available for this request.
+[2022-09-28 21:39:09.268 -04:00  INF]  Executing endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-28 21:39:09.269 -04:00  INF]  Setting HTTP status code 200.
+[2022-09-28 21:39:09.269 -04:00  INF]  Writing value of type 'IQueryable`1' as Json.
+[2022-09-28 21:39:09.271 -04:00  INF]  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT q.id::int AS "Id", q.prompt AS "Prompt", q1.app_name AS "Category", q1.id::int AS "CategoryId", q0.app_name AS "SubCategory", q0.id::int AS "SubCategoryId", q2.app_name AS "Type", q2.id::int AS "TypeId", q.has_asterisk AS "HasAsterisk", q.image_url AS "ImageUrl"
+FROM question AS q
+INNER JOIN question_sub_category AS q0 ON q.question_sub_category_id = q0.id
+INNER JOIN question_category AS q1 ON q0.question_category_id = q1.id
+INNER JOIN question_type AS q2 ON q.question_type_id = q2.id
+[2022-09-28 21:39:09.272 -04:00  INF]  Executed endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-28 21:39:09.272 -04:00  INF]  The response could not be cached for this request.
+[2022-09-28 21:39:09.272 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/api/questions - - - 200 - application/json;+charset=utf-8 3.9401ms
+[2022-09-28 21:39:09.313 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/api/questions/1/answers - -
+[2022-09-28 21:39:09.313 -04:00  INF]  No cached response available for this request.
+[2022-09-28 21:39:09.314 -04:00  INF]  Executing endpoint 'HTTP: GET api/questions/{questionId:int}/answers => ListAnswers'
+[2022-09-28 21:39:09.314 -04:00  INF]  Setting HTTP status code 200.
+[2022-09-28 21:39:09.314 -04:00  INF]  Writing value of type 'IOrderedQueryable`1' as Json.
+[2022-09-28 21:39:09.315 -04:00  INF]  Executed DbCommand (1ms) [Parameters=[@__questionId_0='?' (DbType = Int16)], CommandType='"Text"', CommandTimeout='30']
+SELECT a.id AS "Id", a.question_id AS "QuestionId", a.key AS "Key", a.addl_info AS "AddlInfo", a.img_url AS "ImgUrl", a.is_supplemental AS "IsSupplemental", a.sort AS "Sort"
+FROM answer AS a
+WHERE a.question_id = @__questionId_0
+ORDER BY a.sort
+[2022-09-28 21:39:09.317 -04:00  INF]  Executed endpoint 'HTTP: GET api/questions/{questionId:int}/answers => ListAnswers'
+[2022-09-28 21:39:09.317 -04:00  INF]  The response could not be cached for this request.
+[2022-09-28 21:39:09.317 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/api/questions/1/answers - - - 200 - application/json;+charset=utf-8 3.6617ms
+[2022-09-28 21:39:12.491 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/api/questions - -
+[2022-09-28 21:39:12.491 -04:00  INF]  No cached response available for this request.
+[2022-09-28 21:39:12.491 -04:00  INF]  Executing endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-28 21:39:12.492 -04:00  INF]  Setting HTTP status code 200.
+[2022-09-28 21:39:12.492 -04:00  INF]  Writing value of type 'IQueryable`1' as Json.
+[2022-09-28 21:39:12.496 -04:00  INF]  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT q.id::int AS "Id", q.prompt AS "Prompt", q1.app_name AS "Category", q1.id::int AS "CategoryId", q0.app_name AS "SubCategory", q0.id::int AS "SubCategoryId", q2.app_name AS "Type", q2.id::int AS "TypeId", q.has_asterisk AS "HasAsterisk", q.image_url AS "ImageUrl"
+FROM question AS q
+INNER JOIN question_sub_category AS q0 ON q.question_sub_category_id = q0.id
+INNER JOIN question_category AS q1 ON q0.question_category_id = q1.id
+INNER JOIN question_type AS q2 ON q.question_type_id = q2.id
+[2022-09-28 21:39:12.498 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/bff/user - -
+[2022-09-28 21:39:12.498 -04:00  INF]  No cached response available for this request.
+[2022-09-28 21:39:12.499 -04:00  INF]  Executing endpoint 'HTTP: GET /bff/user'
+[2022-09-28 21:39:12.499 -04:00  INF]  Executed endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-28 21:39:12.499 -04:00  INF]  The response could not be cached for this request.
+[2022-09-28 21:39:12.499 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/api/questions - - - 200 - application/json;+charset=utf-8 8.0737ms
+[2022-09-28 21:39:12.500 -04:00  INF]  Executed endpoint 'HTTP: GET /bff/user'
+[2022-09-28 21:39:12.500 -04:00  INF]  The response could not be cached for this request.
+[2022-09-28 21:39:12.500 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/bff/user - - - 200 - application/json 1.8146ms
+[2022-09-28 21:39:12.537 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/api/questions - -
+[2022-09-28 21:39:12.537 -04:00  INF]  No cached response available for this request.
+[2022-09-28 21:39:12.537 -04:00  INF]  Executing endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-28 21:39:12.538 -04:00  INF]  Setting HTTP status code 200.
+[2022-09-28 21:39:12.538 -04:00  INF]  Writing value of type 'IQueryable`1' as Json.
+[2022-09-28 21:39:12.540 -04:00  INF]  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT q.id::int AS "Id", q.prompt AS "Prompt", q1.app_name AS "Category", q1.id::int AS "CategoryId", q0.app_name AS "SubCategory", q0.id::int AS "SubCategoryId", q2.app_name AS "Type", q2.id::int AS "TypeId", q.has_asterisk AS "HasAsterisk", q.image_url AS "ImageUrl"
+FROM question AS q
+INNER JOIN question_sub_category AS q0 ON q.question_sub_category_id = q0.id
+INNER JOIN question_category AS q1 ON q0.question_category_id = q1.id
+INNER JOIN question_type AS q2 ON q.question_type_id = q2.id
+[2022-09-28 21:39:12.544 -04:00  INF]  Executed endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-28 21:39:12.544 -04:00  INF]  The response could not be cached for this request.
+[2022-09-28 21:39:12.544 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/api/questions - - - 200 - application/json;+charset=utf-8 6.7439ms
+[2022-09-28 21:39:12.727 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/api/questions/1/answers - -
+[2022-09-28 21:39:12.727 -04:00  INF]  No cached response available for this request.
+[2022-09-28 21:39:12.727 -04:00  INF]  Executing endpoint 'HTTP: GET api/questions/{questionId:int}/answers => ListAnswers'
+[2022-09-28 21:39:12.728 -04:00  INF]  Setting HTTP status code 200.
+[2022-09-28 21:39:12.728 -04:00  INF]  Writing value of type 'IOrderedQueryable`1' as Json.
+[2022-09-28 21:39:12.730 -04:00  INF]  Executed DbCommand (2ms) [Parameters=[@__questionId_0='?' (DbType = Int16)], CommandType='"Text"', CommandTimeout='30']
+SELECT a.id AS "Id", a.question_id AS "QuestionId", a.key AS "Key", a.addl_info AS "AddlInfo", a.img_url AS "ImgUrl", a.is_supplemental AS "IsSupplemental", a.sort AS "Sort"
+FROM answer AS a
+WHERE a.question_id = @__questionId_0
+ORDER BY a.sort
+[2022-09-28 21:39:12.731 -04:00  INF]  Executed endpoint 'HTTP: GET api/questions/{questionId:int}/answers => ListAnswers'
+[2022-09-28 21:39:12.731 -04:00  INF]  The response could not be cached for this request.
+[2022-09-28 21:39:12.732 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/api/questions/1/answers - - - 200 - application/json;+charset=utf-8 4.7511ms
+[2022-09-28 21:39:39.938 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/api/questions - -
+[2022-09-28 21:39:39.938 -04:00  INF]  No cached response available for this request.
+[2022-09-28 21:39:39.938 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/bff/user - -
+[2022-09-28 21:39:39.938 -04:00  INF]  No cached response available for this request.
+[2022-09-28 21:39:39.938 -04:00  INF]  Executing endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-28 21:39:39.938 -04:00  INF]  Executing endpoint 'HTTP: GET /bff/user'
+[2022-09-28 21:39:39.938 -04:00  INF]  Executed endpoint 'HTTP: GET /bff/user'
+[2022-09-28 21:39:39.938 -04:00  INF]  The response could not be cached for this request.
+[2022-09-28 21:39:39.938 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/bff/user - - - 200 - application/json 0.3606ms
+[2022-09-28 21:39:39.939 -04:00  INF]  Setting HTTP status code 200.
+[2022-09-28 21:39:39.939 -04:00  INF]  Writing value of type 'IQueryable`1' as Json.
+[2022-09-28 21:39:39.941 -04:00  INF]  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT q.id::int AS "Id", q.prompt AS "Prompt", q1.app_name AS "Category", q1.id::int AS "CategoryId", q0.app_name AS "SubCategory", q0.id::int AS "SubCategoryId", q2.app_name AS "Type", q2.id::int AS "TypeId", q.has_asterisk AS "HasAsterisk", q.image_url AS "ImageUrl"
+FROM question AS q
+INNER JOIN question_sub_category AS q0 ON q.question_sub_category_id = q0.id
+INNER JOIN question_category AS q1 ON q0.question_category_id = q1.id
+INNER JOIN question_type AS q2 ON q.question_type_id = q2.id
+[2022-09-28 21:39:39.950 -04:00  INF]  Executed endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-28 21:39:39.951 -04:00  INF]  The response could not be cached for this request.
+[2022-09-28 21:39:39.951 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/api/questions - - - 200 - application/json;+charset=utf-8 12.8200ms
+[2022-09-28 21:39:39.960 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/api/questions - -
+[2022-09-28 21:39:39.960 -04:00  INF]  No cached response available for this request.
+[2022-09-28 21:39:39.960 -04:00  INF]  Executing endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-28 21:39:39.961 -04:00  INF]  Setting HTTP status code 200.
+[2022-09-28 21:39:39.961 -04:00  INF]  Writing value of type 'IQueryable`1' as Json.
+[2022-09-28 21:39:39.963 -04:00  INF]  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT q.id::int AS "Id", q.prompt AS "Prompt", q1.app_name AS "Category", q1.id::int AS "CategoryId", q0.app_name AS "SubCategory", q0.id::int AS "SubCategoryId", q2.app_name AS "Type", q2.id::int AS "TypeId", q.has_asterisk AS "HasAsterisk", q.image_url AS "ImageUrl"
+FROM question AS q
+INNER JOIN question_sub_category AS q0 ON q.question_sub_category_id = q0.id
+INNER JOIN question_category AS q1 ON q0.question_category_id = q1.id
+INNER JOIN question_type AS q2 ON q.question_type_id = q2.id
+[2022-09-28 21:39:39.964 -04:00  INF]  Executed endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-28 21:39:39.964 -04:00  INF]  The response could not be cached for this request.
+[2022-09-28 21:39:39.964 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/api/questions - - - 200 - application/json;+charset=utf-8 4.2522ms
+[2022-09-28 21:39:39.991 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/api/questions/1/answers - -
+[2022-09-28 21:39:39.991 -04:00  INF]  No cached response available for this request.
+[2022-09-28 21:39:39.992 -04:00  INF]  Executing endpoint 'HTTP: GET api/questions/{questionId:int}/answers => ListAnswers'
+[2022-09-28 21:39:39.992 -04:00  INF]  Setting HTTP status code 200.
+[2022-09-28 21:39:39.992 -04:00  INF]  Writing value of type 'IOrderedQueryable`1' as Json.
+[2022-09-28 21:39:39.995 -04:00  INF]  Executed DbCommand (3ms) [Parameters=[@__questionId_0='?' (DbType = Int16)], CommandType='"Text"', CommandTimeout='30']
+SELECT a.id AS "Id", a.question_id AS "QuestionId", a.key AS "Key", a.addl_info AS "AddlInfo", a.img_url AS "ImgUrl", a.is_supplemental AS "IsSupplemental", a.sort AS "Sort"
+FROM answer AS a
+WHERE a.question_id = @__questionId_0
+ORDER BY a.sort
+[2022-09-28 21:39:39.996 -04:00  INF]  Executed endpoint 'HTTP: GET api/questions/{questionId:int}/answers => ListAnswers'
+[2022-09-28 21:39:39.996 -04:00  INF]  The response could not be cached for this request.
+[2022-09-28 21:39:39.997 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/api/questions/1/answers - - - 200 - application/json;+charset=utf-8 5.3391ms
+[2022-09-28 21:39:43.214 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/api/questions - -
+[2022-09-28 21:39:43.215 -04:00  INF]  No cached response available for this request.
+[2022-09-28 21:39:43.216 -04:00  INF]  Executing endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-28 21:39:43.216 -04:00  INF]  Setting HTTP status code 200.
+[2022-09-28 21:39:43.216 -04:00  INF]  Writing value of type 'IQueryable`1' as Json.
+[2022-09-28 21:39:43.218 -04:00  INF]  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT q.id::int AS "Id", q.prompt AS "Prompt", q1.app_name AS "Category", q1.id::int AS "CategoryId", q0.app_name AS "SubCategory", q0.id::int AS "SubCategoryId", q2.app_name AS "Type", q2.id::int AS "TypeId", q.has_asterisk AS "HasAsterisk", q.image_url AS "ImageUrl"
+FROM question AS q
+INNER JOIN question_sub_category AS q0 ON q.question_sub_category_id = q0.id
+INNER JOIN question_category AS q1 ON q0.question_category_id = q1.id
+INNER JOIN question_type AS q2 ON q.question_type_id = q2.id
+[2022-09-28 21:39:43.219 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/bff/user - -
+[2022-09-28 21:39:43.219 -04:00  INF]  No cached response available for this request.
+[2022-09-28 21:39:43.220 -04:00  INF]  Executing endpoint 'HTTP: GET /bff/user'
+[2022-09-28 21:39:43.220 -04:00  INF]  Executed endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-28 21:39:43.220 -04:00  INF]  The response could not be cached for this request.
+[2022-09-28 21:39:43.220 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/api/questions - - - 200 - application/json;+charset=utf-8 6.4533ms
+[2022-09-28 21:39:43.221 -04:00  INF]  Executed endpoint 'HTTP: GET /bff/user'
+[2022-09-28 21:39:43.221 -04:00  INF]  The response could not be cached for this request.
+[2022-09-28 21:39:43.221 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/bff/user - - - 200 - application/json 2.5621ms
+[2022-09-28 21:39:43.242 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/api/questions - -
+[2022-09-28 21:39:43.242 -04:00  INF]  No cached response available for this request.
+[2022-09-28 21:39:43.242 -04:00  INF]  Executing endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-28 21:39:43.242 -04:00  INF]  Setting HTTP status code 200.
+[2022-09-28 21:39:43.242 -04:00  INF]  Writing value of type 'IQueryable`1' as Json.
+[2022-09-28 21:39:43.245 -04:00  INF]  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT q.id::int AS "Id", q.prompt AS "Prompt", q1.app_name AS "Category", q1.id::int AS "CategoryId", q0.app_name AS "SubCategory", q0.id::int AS "SubCategoryId", q2.app_name AS "Type", q2.id::int AS "TypeId", q.has_asterisk AS "HasAsterisk", q.image_url AS "ImageUrl"
+FROM question AS q
+INNER JOIN question_sub_category AS q0 ON q.question_sub_category_id = q0.id
+INNER JOIN question_category AS q1 ON q0.question_category_id = q1.id
+INNER JOIN question_type AS q2 ON q.question_type_id = q2.id
+[2022-09-28 21:39:43.247 -04:00  INF]  Executed endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-28 21:39:43.247 -04:00  INF]  The response could not be cached for this request.
+[2022-09-28 21:39:43.247 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/api/questions - - - 200 - application/json;+charset=utf-8 5.3278ms
+[2022-09-28 21:39:43.356 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/api/questions/1/answers - -
+[2022-09-28 21:39:43.356 -04:00  INF]  No cached response available for this request.
+[2022-09-28 21:39:43.356 -04:00  INF]  Executing endpoint 'HTTP: GET api/questions/{questionId:int}/answers => ListAnswers'
+[2022-09-28 21:39:43.357 -04:00  INF]  Setting HTTP status code 200.
+[2022-09-28 21:39:43.357 -04:00  INF]  Writing value of type 'IOrderedQueryable`1' as Json.
+[2022-09-28 21:39:43.358 -04:00  INF]  Executed DbCommand (1ms) [Parameters=[@__questionId_0='?' (DbType = Int16)], CommandType='"Text"', CommandTimeout='30']
+SELECT a.id AS "Id", a.question_id AS "QuestionId", a.key AS "Key", a.addl_info AS "AddlInfo", a.img_url AS "ImgUrl", a.is_supplemental AS "IsSupplemental", a.sort AS "Sort"
+FROM answer AS a
+WHERE a.question_id = @__questionId_0
+ORDER BY a.sort
+[2022-09-28 21:39:43.360 -04:00  INF]  Executed endpoint 'HTTP: GET api/questions/{questionId:int}/answers => ListAnswers'
+[2022-09-28 21:39:43.361 -04:00  INF]  The response could not be cached for this request.
+[2022-09-28 21:39:43.361 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/api/questions/1/answers - - - 200 - application/json;+charset=utf-8 4.8249ms
+[2022-09-28 21:44:53.981 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/bff/user - -
+[2022-09-28 21:44:53.981 -04:00  INF]  No cached response available for this request.
+[2022-09-28 21:44:53.982 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/api/questions - -
+[2022-09-28 21:44:53.982 -04:00  INF]  No cached response available for this request.
+[2022-09-28 21:44:53.982 -04:00  INF]  Executing endpoint 'HTTP: GET /bff/user'
+[2022-09-28 21:44:53.982 -04:00  INF]  Executing endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-28 21:44:53.983 -04:00  INF]  Executed endpoint 'HTTP: GET /bff/user'
+[2022-09-28 21:44:53.983 -04:00  INF]  The response could not be cached for this request.
+[2022-09-28 21:44:53.983 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/bff/user - - - 200 - application/json 2.0903ms
+[2022-09-28 21:44:53.984 -04:00  INF]  Setting HTTP status code 200.
+[2022-09-28 21:44:53.984 -04:00  INF]  Writing value of type 'IQueryable`1' as Json.
+[2022-09-28 21:44:54.035 -04:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT q.id::int AS "Id", q.prompt AS "Prompt", q1.app_name AS "Category", q1.id::int AS "CategoryId", q0.app_name AS "SubCategory", q0.id::int AS "SubCategoryId", q2.app_name AS "Type", q2.id::int AS "TypeId", q.has_asterisk AS "HasAsterisk", q.image_url AS "ImageUrl"
+FROM question AS q
+INNER JOIN question_sub_category AS q0 ON q.question_sub_category_id = q0.id
+INNER JOIN question_category AS q1 ON q0.question_category_id = q1.id
+INNER JOIN question_type AS q2 ON q.question_type_id = q2.id
+[2022-09-28 21:44:54.035 -04:00  INF]  Executed endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-28 21:44:54.035 -04:00  INF]  The response could not be cached for this request.
+[2022-09-28 21:44:54.035 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/api/questions - - - 200 - application/json;+charset=utf-8 53.0895ms
+[2022-09-28 21:44:54.045 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/api/questions - -
+[2022-09-28 21:44:54.045 -04:00  INF]  No cached response available for this request.
+[2022-09-28 21:44:54.046 -04:00  INF]  Executing endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-28 21:44:54.046 -04:00  INF]  Setting HTTP status code 200.
+[2022-09-28 21:44:54.046 -04:00  INF]  Writing value of type 'IQueryable`1' as Json.
+[2022-09-28 21:44:54.048 -04:00  INF]  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT q.id::int AS "Id", q.prompt AS "Prompt", q1.app_name AS "Category", q1.id::int AS "CategoryId", q0.app_name AS "SubCategory", q0.id::int AS "SubCategoryId", q2.app_name AS "Type", q2.id::int AS "TypeId", q.has_asterisk AS "HasAsterisk", q.image_url AS "ImageUrl"
+FROM question AS q
+INNER JOIN question_sub_category AS q0 ON q.question_sub_category_id = q0.id
+INNER JOIN question_category AS q1 ON q0.question_category_id = q1.id
+INNER JOIN question_type AS q2 ON q.question_type_id = q2.id
+[2022-09-28 21:44:54.049 -04:00  INF]  Executed endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-28 21:44:54.049 -04:00  INF]  The response could not be cached for this request.
+[2022-09-28 21:44:54.049 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/api/questions - - - 200 - application/json;+charset=utf-8 3.6139ms
+[2022-09-28 21:44:54.066 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/api/questions/1/answers - -
+[2022-09-28 21:44:54.066 -04:00  INF]  No cached response available for this request.
+[2022-09-28 21:44:54.067 -04:00  INF]  Executing endpoint 'HTTP: GET api/questions/{questionId:int}/answers => ListAnswers'
+[2022-09-28 21:44:54.067 -04:00  INF]  Setting HTTP status code 200.
+[2022-09-28 21:44:54.067 -04:00  INF]  Writing value of type 'IOrderedQueryable`1' as Json.
+[2022-09-28 21:44:54.071 -04:00  INF]  Executed DbCommand (3ms) [Parameters=[@__questionId_0='?' (DbType = Int16)], CommandType='"Text"', CommandTimeout='30']
+SELECT a.id AS "Id", a.question_id AS "QuestionId", a.key AS "Key", a.addl_info AS "AddlInfo", a.img_url AS "ImgUrl", a.is_supplemental AS "IsSupplemental", a.sort AS "Sort"
+FROM answer AS a
+WHERE a.question_id = @__questionId_0
+ORDER BY a.sort
+[2022-09-28 21:44:54.072 -04:00  INF]  Executed endpoint 'HTTP: GET api/questions/{questionId:int}/answers => ListAnswers'
+[2022-09-28 21:44:54.072 -04:00  INF]  The response could not be cached for this request.
+[2022-09-28 21:44:54.073 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/api/questions/1/answers - - - 200 - application/json;+charset=utf-8 6.7801ms
+[2022-09-28 21:48:41.062 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/api/questions - -
+[2022-09-28 21:48:41.063 -04:00  INF]  No cached response available for this request.
+[2022-09-28 21:48:41.064 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/bff/user - -
+[2022-09-28 21:48:41.064 -04:00  INF]  Executing endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-28 21:48:41.088 -04:00  INF]  No cached response available for this request.
+[2022-09-28 21:48:41.088 -04:00  INF]  Executing endpoint 'HTTP: GET /bff/user'
+[2022-09-28 21:48:41.088 -04:00  INF]  Setting HTTP status code 200.
+[2022-09-28 21:48:41.088 -04:00  INF]  Executed endpoint 'HTTP: GET /bff/user'
+[2022-09-28 21:48:41.088 -04:00  INF]  The response could not be cached for this request.
+[2022-09-28 21:48:41.088 -04:00  INF]  Writing value of type 'IQueryable`1' as Json.
+[2022-09-28 21:48:41.088 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/bff/user - - - 200 - application/json 24.4095ms
+[2022-09-28 21:48:41.091 -04:00  INF]  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT q.id::int AS "Id", q.prompt AS "Prompt", q1.app_name AS "Category", q1.id::int AS "CategoryId", q0.app_name AS "SubCategory", q0.id::int AS "SubCategoryId", q2.app_name AS "Type", q2.id::int AS "TypeId", q.has_asterisk AS "HasAsterisk", q.image_url AS "ImageUrl"
+FROM question AS q
+INNER JOIN question_sub_category AS q0 ON q.question_sub_category_id = q0.id
+INNER JOIN question_category AS q1 ON q0.question_category_id = q1.id
+INNER JOIN question_type AS q2 ON q.question_type_id = q2.id
+[2022-09-28 21:48:41.097 -04:00  INF]  Executed endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-28 21:48:41.097 -04:00  INF]  The response could not be cached for this request.
+[2022-09-28 21:48:41.098 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/api/questions - - - 200 - application/json;+charset=utf-8 35.6834ms
+[2022-09-28 21:48:41.104 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/api/questions - -
+[2022-09-28 21:48:41.104 -04:00  INF]  No cached response available for this request.
+[2022-09-28 21:48:41.104 -04:00  INF]  Executing endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-28 21:48:41.105 -04:00  INF]  Setting HTTP status code 200.
+[2022-09-28 21:48:41.105 -04:00  INF]  Writing value of type 'IQueryable`1' as Json.
+[2022-09-28 21:48:41.106 -04:00  INF]  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT q.id::int AS "Id", q.prompt AS "Prompt", q1.app_name AS "Category", q1.id::int AS "CategoryId", q0.app_name AS "SubCategory", q0.id::int AS "SubCategoryId", q2.app_name AS "Type", q2.id::int AS "TypeId", q.has_asterisk AS "HasAsterisk", q.image_url AS "ImageUrl"
+FROM question AS q
+INNER JOIN question_sub_category AS q0 ON q.question_sub_category_id = q0.id
+INNER JOIN question_category AS q1 ON q0.question_category_id = q1.id
+INNER JOIN question_type AS q2 ON q.question_type_id = q2.id
+[2022-09-28 21:48:41.108 -04:00  INF]  Executed endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-28 21:48:41.108 -04:00  INF]  The response could not be cached for this request.
+[2022-09-28 21:48:41.108 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/api/questions - - - 200 - application/json;+charset=utf-8 4.1221ms
+[2022-09-28 21:48:41.132 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/api/questions/103/answers - -
+[2022-09-28 21:48:41.132 -04:00  INF]  No cached response available for this request.
+[2022-09-28 21:48:41.132 -04:00  INF]  Executing endpoint 'HTTP: GET api/questions/{questionId:int}/answers => ListAnswers'
+[2022-09-28 21:48:41.132 -04:00  INF]  Setting HTTP status code 200.
+[2022-09-28 21:48:41.132 -04:00  INF]  Writing value of type 'IOrderedQueryable`1' as Json.
+[2022-09-28 21:48:41.134 -04:00  INF]  Executed DbCommand (1ms) [Parameters=[@__questionId_0='?' (DbType = Int16)], CommandType='"Text"', CommandTimeout='30']
+SELECT a.id AS "Id", a.question_id AS "QuestionId", a.key AS "Key", a.addl_info AS "AddlInfo", a.img_url AS "ImgUrl", a.is_supplemental AS "IsSupplemental", a.sort AS "Sort"
+FROM answer AS a
+WHERE a.question_id = @__questionId_0
+ORDER BY a.sort
+[2022-09-28 21:48:41.135 -04:00  INF]  Executed endpoint 'HTTP: GET api/questions/{questionId:int}/answers => ListAnswers'
+[2022-09-28 21:48:41.135 -04:00  INF]  The response could not be cached for this request.
+[2022-09-28 21:48:41.135 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/api/questions/103/answers - - - 200 - application/json;+charset=utf-8 3.4197ms
+[2022-09-28 21:48:43.555 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/api/questions - -
+[2022-09-28 21:48:43.555 -04:00  INF]  No cached response available for this request.
+[2022-09-28 21:48:43.556 -04:00  INF]  Executing endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-28 21:48:43.556 -04:00  INF]  Setting HTTP status code 200.
+[2022-09-28 21:48:43.556 -04:00  INF]  Writing value of type 'IQueryable`1' as Json.
+[2022-09-28 21:48:43.556 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/bff/user - -
+[2022-09-28 21:48:43.557 -04:00  INF]  No cached response available for this request.
+[2022-09-28 21:48:43.558 -04:00  INF]  Executing endpoint 'HTTP: GET /bff/user'
+[2022-09-28 21:48:43.558 -04:00  INF]  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT q.id::int AS "Id", q.prompt AS "Prompt", q1.app_name AS "Category", q1.id::int AS "CategoryId", q0.app_name AS "SubCategory", q0.id::int AS "SubCategoryId", q2.app_name AS "Type", q2.id::int AS "TypeId", q.has_asterisk AS "HasAsterisk", q.image_url AS "ImageUrl"
+FROM question AS q
+INNER JOIN question_sub_category AS q0 ON q.question_sub_category_id = q0.id
+INNER JOIN question_category AS q1 ON q0.question_category_id = q1.id
+INNER JOIN question_type AS q2 ON q.question_type_id = q2.id
+[2022-09-28 21:48:43.559 -04:00  INF]  Executed endpoint 'HTTP: GET /bff/user'
+[2022-09-28 21:48:43.559 -04:00  INF]  The response could not be cached for this request.
+[2022-09-28 21:48:43.559 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/bff/user - - - 200 - application/json 2.9430ms
+[2022-09-28 21:48:43.560 -04:00  INF]  Executed endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-28 21:48:43.560 -04:00  INF]  The response could not be cached for this request.
+[2022-09-28 21:48:43.560 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/api/questions - - - 200 - application/json;+charset=utf-8 5.7427ms
+[2022-09-28 21:48:43.614 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/api/questions - -
+[2022-09-28 21:48:43.614 -04:00  INF]  No cached response available for this request.
+[2022-09-28 21:48:43.614 -04:00  INF]  Executing endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-28 21:48:43.615 -04:00  INF]  Setting HTTP status code 200.
+[2022-09-28 21:48:43.615 -04:00  INF]  Writing value of type 'IQueryable`1' as Json.
+[2022-09-28 21:48:43.618 -04:00  INF]  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT q.id::int AS "Id", q.prompt AS "Prompt", q1.app_name AS "Category", q1.id::int AS "CategoryId", q0.app_name AS "SubCategory", q0.id::int AS "SubCategoryId", q2.app_name AS "Type", q2.id::int AS "TypeId", q.has_asterisk AS "HasAsterisk", q.image_url AS "ImageUrl"
+FROM question AS q
+INNER JOIN question_sub_category AS q0 ON q.question_sub_category_id = q0.id
+INNER JOIN question_category AS q1 ON q0.question_category_id = q1.id
+INNER JOIN question_type AS q2 ON q.question_type_id = q2.id
+[2022-09-28 21:48:43.619 -04:00  INF]  Executed endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-28 21:48:43.619 -04:00  INF]  The response could not be cached for this request.
+[2022-09-28 21:48:43.619 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/api/questions - - - 200 - application/json;+charset=utf-8 4.8602ms
+[2022-09-28 21:48:43.631 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/api/questions/105/answers - -
+[2022-09-28 21:48:43.631 -04:00  INF]  No cached response available for this request.
+[2022-09-28 21:48:43.632 -04:00  INF]  Executing endpoint 'HTTP: GET api/questions/{questionId:int}/answers => ListAnswers'
+[2022-09-28 21:48:43.632 -04:00  INF]  Setting HTTP status code 200.
+[2022-09-28 21:48:43.632 -04:00  INF]  Writing value of type 'IOrderedQueryable`1' as Json.
+[2022-09-28 21:48:43.634 -04:00  INF]  Executed DbCommand (1ms) [Parameters=[@__questionId_0='?' (DbType = Int16)], CommandType='"Text"', CommandTimeout='30']
+SELECT a.id AS "Id", a.question_id AS "QuestionId", a.key AS "Key", a.addl_info AS "AddlInfo", a.img_url AS "ImgUrl", a.is_supplemental AS "IsSupplemental", a.sort AS "Sort"
+FROM answer AS a
+WHERE a.question_id = @__questionId_0
+ORDER BY a.sort
+[2022-09-28 21:48:43.635 -04:00  INF]  Executed endpoint 'HTTP: GET api/questions/{questionId:int}/answers => ListAnswers'
+[2022-09-28 21:48:43.635 -04:00  INF]  The response could not be cached for this request.
+[2022-09-28 21:48:43.635 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/api/questions/105/answers - - - 200 - application/json;+charset=utf-8 3.5740ms
+[2022-09-28 21:48:47.535 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/api/questions - -
+[2022-09-28 21:48:47.535 -04:00  INF]  No cached response available for this request.
+[2022-09-28 21:48:47.536 -04:00  INF]  Executing endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-28 21:48:47.536 -04:00  INF]  Setting HTTP status code 200.
+[2022-09-28 21:48:47.536 -04:00  INF]  Writing value of type 'IQueryable`1' as Json.
+[2022-09-28 21:48:47.537 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/bff/user - -
+[2022-09-28 21:48:47.537 -04:00  INF]  No cached response available for this request.
+[2022-09-28 21:48:47.538 -04:00  INF]  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT q.id::int AS "Id", q.prompt AS "Prompt", q1.app_name AS "Category", q1.id::int AS "CategoryId", q0.app_name AS "SubCategory", q0.id::int AS "SubCategoryId", q2.app_name AS "Type", q2.id::int AS "TypeId", q.has_asterisk AS "HasAsterisk", q.image_url AS "ImageUrl"
+FROM question AS q
+INNER JOIN question_sub_category AS q0 ON q.question_sub_category_id = q0.id
+INNER JOIN question_category AS q1 ON q0.question_category_id = q1.id
+INNER JOIN question_type AS q2 ON q.question_type_id = q2.id
+[2022-09-28 21:48:47.539 -04:00  INF]  Executing endpoint 'HTTP: GET /bff/user'
+[2022-09-28 21:48:47.540 -04:00  INF]  Executed endpoint 'HTTP: GET /bff/user'
+[2022-09-28 21:48:47.540 -04:00  INF]  The response could not be cached for this request.
+[2022-09-28 21:48:47.540 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/bff/user - - - 200 - application/json 3.4810ms
+[2022-09-28 21:48:47.541 -04:00  INF]  Executed endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-28 21:48:47.541 -04:00  INF]  The response could not be cached for this request.
+[2022-09-28 21:48:47.541 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/api/questions - - - 200 - application/json;+charset=utf-8 6.4237ms
+[2022-09-28 21:48:47.557 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/api/questions - -
+[2022-09-28 21:48:47.557 -04:00  INF]  No cached response available for this request.
+[2022-09-28 21:48:47.557 -04:00  INF]  Executing endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-28 21:48:47.558 -04:00  INF]  Setting HTTP status code 200.
+[2022-09-28 21:48:47.558 -04:00  INF]  Writing value of type 'IQueryable`1' as Json.
+[2022-09-28 21:48:47.560 -04:00  INF]  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT q.id::int AS "Id", q.prompt AS "Prompt", q1.app_name AS "Category", q1.id::int AS "CategoryId", q0.app_name AS "SubCategory", q0.id::int AS "SubCategoryId", q2.app_name AS "Type", q2.id::int AS "TypeId", q.has_asterisk AS "HasAsterisk", q.image_url AS "ImageUrl"
+FROM question AS q
+INNER JOIN question_sub_category AS q0 ON q.question_sub_category_id = q0.id
+INNER JOIN question_category AS q1 ON q0.question_category_id = q1.id
+INNER JOIN question_type AS q2 ON q.question_type_id = q2.id
+[2022-09-28 21:48:47.561 -04:00  INF]  Executed endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-28 21:48:47.561 -04:00  INF]  The response could not be cached for this request.
+[2022-09-28 21:48:47.561 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/api/questions - - - 200 - application/json;+charset=utf-8 4.4649ms
+[2022-09-28 21:48:49.595 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/api/questions/1/answers - -
+[2022-09-28 21:48:49.596 -04:00  INF]  No cached response available for this request.
+[2022-09-28 21:48:49.596 -04:00  INF]  Executing endpoint 'HTTP: GET api/questions/{questionId:int}/answers => ListAnswers'
+[2022-09-28 21:48:49.596 -04:00  INF]  Setting HTTP status code 200.
+[2022-09-28 21:48:49.596 -04:00  INF]  Writing value of type 'IOrderedQueryable`1' as Json.
+[2022-09-28 21:48:49.599 -04:00  INF]  Executed DbCommand (2ms) [Parameters=[@__questionId_0='?' (DbType = Int16)], CommandType='"Text"', CommandTimeout='30']
+SELECT a.id AS "Id", a.question_id AS "QuestionId", a.key AS "Key", a.addl_info AS "AddlInfo", a.img_url AS "ImgUrl", a.is_supplemental AS "IsSupplemental", a.sort AS "Sort"
+FROM answer AS a
+WHERE a.question_id = @__questionId_0
+ORDER BY a.sort
+[2022-09-28 21:48:49.599 -04:00  INF]  Executed endpoint 'HTTP: GET api/questions/{questionId:int}/answers => ListAnswers'
+[2022-09-28 21:48:49.600 -04:00  INF]  The response could not be cached for this request.
+[2022-09-28 21:48:49.600 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/api/questions/1/answers - - - 200 - application/json;+charset=utf-8 4.2035ms

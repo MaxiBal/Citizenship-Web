@@ -1,4 +1,26 @@
-<body>
-  <app-nav-bar></app-nav-bar>
-</body>
+<div class="cover">
+  <!-- header -->
+  <div class="header">
+    <app-header></app-header>
+  </div>
+  <!-- center -->
+  <div class="main-page">
+    <div class="center">
+      <mat-sidenav-container>
+        <mat-sidenav #sidenav role="navigation" closed mode="side" [fixedInViewport]="true">
+          <app-sidenav></app-sidenav>
+        </mat-sidenav>
+        <mat-sidenav-content app-scroll>
+          <div class="app-container">
+            <main>
+              <router-outlet></router-outlet>
+            </main>
+          </div>
+        </mat-sidenav-content>
+      </mat-sidenav-container>
+    </div>
+    <div class="footer">
 
+    </div>
+  </div>
+</div>

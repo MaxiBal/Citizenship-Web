@@ -1,0 +1,6 @@
+<mat-nav-list>
+    <div mat-subheader>Questions</div>
+    <div *ngFor="let q of questionIndexArr index as i">
+        <a mat-list-item [routerLink]="['/question', 'q', i + 1]">Question #{{i + 1}}</a>
+    </div>
+</mat-nav-list>

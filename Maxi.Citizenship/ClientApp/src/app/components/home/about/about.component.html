@@ -1,0 +1,52 @@
+<section id="about" class="mat-typography" [ngStyle.lt-md]="{'margin-top': '50px', 'margin-bottom': '50px'}">
+  <div class="container">
+
+    <div class="about-section about-heading" fxLayout="column" fxLayoutAlign="center">
+        <div>
+        <h2 [ngStyle.lt-md]="{'margin-bottom': '15px'}">Benefits of Civic</h2>
+        </div>
+        <div>
+      <h3 [ngStyle.xs]="{'font-size': '18px'}" [ngStyle.sm]="{'font-size': '22px'}">Simple and effective practice to help you become a citizen.</h3>
+      </div>
+    </div>
+
+    <div fxLayoutAlign="center">
+      <div fxLayout="row" fxLayout.lt-md="column" fxLayoutWrap="nowrap" fxLayoutGap="30px">
+        <mat-tab-group [style]="{'min-height': '500px'}">
+
+          <mat-tab label="Listen & Answer">
+            <div fxLayoutAlign="center center" class="wrapper">
+              <div class="about-column">
+                  <div fxLayout="column" fxLayoutAlign="center center" [ngStyle.xs]="{'padding': '0 60px'}">
+                    <div>
+                      <mat-icon class="icon-header" [ngStyle.lt-md]="{'font-size': '48px'}" color="accent">headphones</mat-icon>
+                    </div>
+                    <span fxFlex="30px"></span>
+                    <h2 class="about-text">Listen and Answer</h2>
+                    <span fxFlex="10px"></span>
+                    <p class="about-text">The questions will be read to you and you will have to speak to answer them, just like in the real test</p>
+                  </div>
+              </div>
+            </div>
+          </mat-tab>
+
+          <mat-tab label="Same Questions">
+            <div fxLayoutAlign="center center" class="wrapper">
+              <div class="about-column">
+                  <div fxLayout="column" fxLayoutAlign="center center" [ngStyle.lt-md]="{'padding': '0 60px'}">
+                    <div >
+                      <mat-icon class="icon-header" color="accent" [ngStyle.lt-md]="{'font-size': '48px'}">quiz</mat-icon>
+                    </div>
+                    <span fxFlex="30px"></span>
+                    <h2 class="about-text">Questions Just Like the Ones You'll See</h2>
+                    <span fxFlex="10px"></span>
+                    <p class="about-text">We use the exact same questions that will be read to you during your real naturalization test.</p>
+                  </div>
+              </div>
+            </div>
+          </mat-tab>
+        </mat-tab-group>
+      </div>
+    </div>
+  </div>
+</section>

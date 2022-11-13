@@ -1,0 +1,74 @@
+mat-sidenav-container,
+mat-sidenav-content,
+mat-sidenav {
+    background-color: white;
+    height: 100%;
+}
+
+mat-sidenav {
+    width: 250px;
+}
+
+main {
+    padding: 10px;
+
+}
+
+.main-page {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-container {
+  min-height: calc(100vh - 6rem);
+}
+
+.cover {
+    display: flex;
+    flex-direction: column;
+    /*padding: 2rem;*/
+}
+
+.cover>* {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.cover> :first-child:not(.centered) {
+    margin-top: 0;
+    padding: 0px;
+}
+
+.cover> :last-child:not(.centered) {
+    margin-bottom: 0;
+}
+
+.cover>.centered {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 100000;
+    background-color: white;
+    padding-top: 1rem;
+    height: 100%;
+}
+
+.header {
+    position: sticky;
+    position: -webkit-sticky;
+    /* For macOS/iOS Safari */
+    top: 0;
+    /* Sets the sticky toolbar to be on top */
+    z-index: 1000;
+    /* Ensure that your app's content doesn't overlap the toolbar */
+}
+
+mat-sidenav {
+    padding-top: 3.5rem;
+}

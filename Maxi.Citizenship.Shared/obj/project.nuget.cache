@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MzBaIv2LdkdOPME4g5+thIfZsYiwCdNf0dD9sFVtSkm9n9AleLKAfFvpM421gWXour0nmDOtR8qWwNkloVFIYQ==",
+  "dgSpecHash": "b+k4RmvU0wsRBSxaCaEjy192vTegkxxxl6DPsp6B3s5P615jGvBp0HDn5m3KctfOuQQWNbQb2jaXy5AK8pvkJQ==",
   "success": true,
-  "projectFilePath": "C:\\github\\Maxi\\Maxi.Citizenship\\Maxi.Citizenship.Shared\\Maxi.Citizenship.Shared.csproj",
+  "projectFilePath": "C:\\apps\\citizenship-app\\Citizenship-Web\\Maxi.Citizenship.Shared\\Maxi.Citizenship.Shared.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

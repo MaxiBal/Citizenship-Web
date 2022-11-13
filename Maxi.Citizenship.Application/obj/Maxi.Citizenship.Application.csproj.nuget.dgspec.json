@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\github\\Maxi\\Maxi.Citizenship\\Maxi.Citizenship.Application\\Maxi.Citizenship.Application.csproj": {}
+    "C:\\apps\\citizenship-app\\Citizenship-Web\\Maxi.Citizenship.Application\\Maxi.Citizenship.Application.csproj": {}
   },
   "projects": {
-    "C:\\github\\Maxi\\Maxi.Citizenship\\Maxi.Citizenship.Application\\Maxi.Citizenship.Application.csproj": {
+    "C:\\apps\\citizenship-app\\Citizenship-Web\\Maxi.Citizenship.Application\\Maxi.Citizenship.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\github\\Maxi\\Maxi.Citizenship\\Maxi.Citizenship.Application\\Maxi.Citizenship.Application.csproj",
+        "projectUniqueName": "C:\\apps\\citizenship-app\\Citizenship-Web\\Maxi.Citizenship.Application\\Maxi.Citizenship.Application.csproj",
         "projectName": "Maxi.Citizenship.Application",
-        "projectPath": "C:\\github\\Maxi\\Maxi.Citizenship\\Maxi.Citizenship.Application\\Maxi.Citizenship.Application.csproj",
-        "packagesPath": "C:\\Users\\balab\\.nuget\\packages\\",
-        "outputPath": "C:\\github\\Maxi\\Maxi.Citizenship\\Maxi.Citizenship.Application\\obj\\",
+        "projectPath": "C:\\apps\\citizenship-app\\Citizenship-Web\\Maxi.Citizenship.Application\\Maxi.Citizenship.Application.csproj",
+        "packagesPath": "C:\\Users\\Maxi\\.nuget\\packages\\",
+        "outputPath": "C:\\apps\\citizenship-app\\Citizenship-Web\\Maxi.Citizenship.Application\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\balab\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Maxi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

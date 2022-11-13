@@ -6,10 +6,10 @@ public static partial class AppAuth
 {
     public static IServiceCollection AddAuth(this IServiceCollection services, IConfiguration configuration)
     {
-        _ = services.AddBff()
-                    .AddRemoteApis();
+        /*_ = services.AddBff()
+                    .AddRemoteApis();*/
 
-        _ = services.AddAuthentication(options =>
+        /*_ = services.AddAuthentication(options =>
         {
             options.DefaultScheme = "cookie";
             options.DefaultChallengeScheme = "oidc";
@@ -41,7 +41,7 @@ public static partial class AppAuth
                 NameClaimType = "name",
                 RoleClaimType = "role"
             };
-        });
+        });*/
 
         return services;
     }

@@ -1,0 +1,40 @@
+#heading {
+  margin-top: 4rem;
+}
+
+.heading-section{
+  text-align: center;
+  background-color: rgba(255,255,255,0.85);
+  padding: 3rem 5rem 2rem 5rem;
+  border-radius: 25px;
+}
+
+.heading-section h1{
+  font-size: 58px;
+}
+
+.heading-section h2{
+  margin-top: 30px;
+}
+
+.heading-button-left{
+  min-width: 144px;
+  max-width: 100%;
+}
+
+.heading-button-right{
+  margin-left: 10px;
+}
+
+.container {
+  width: 100%;
+  max-width: 100vw;
+  margin-top: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  height: 100vh;
+  background-image: url("/assets/images/front-background.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}

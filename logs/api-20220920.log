@@ -1,0 +1,359 @@
+[2022-09-20 20:58:29.206 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/bff/user - -
+[2022-09-20 20:58:29.228 -04:00  INF]  No cached response available for this request.
+[2022-09-20 20:58:29.234 -04:00  INF]  Executing endpoint 'HTTP: GET /bff/user'
+[2022-09-20 20:58:29.234 -04:00  INF]  Executed endpoint 'HTTP: GET /bff/user'
+[2022-09-20 20:58:29.234 -04:00  INF]  The response could not be cached for this request.
+[2022-09-20 20:58:29.235 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/bff/user - - - 401 0 - 30.0642ms
+[2022-09-20 20:58:29.394 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/bff/user - -
+[2022-09-20 20:58:29.395 -04:00  INF]  No cached response available for this request.
+[2022-09-20 20:58:29.395 -04:00  INF]  Executing endpoint 'HTTP: GET /bff/user'
+[2022-09-20 20:58:29.395 -04:00  INF]  Executed endpoint 'HTTP: GET /bff/user'
+[2022-09-20 20:58:29.395 -04:00  INF]  The response could not be cached for this request.
+[2022-09-20 20:58:29.395 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/bff/user - - - 401 0 - 1.5827ms
+[2022-09-20 21:03:21.618 -04:00  WRN]  You do not have a valid license key for the Duende software. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please start a conversation with us: https://duendesoftware.com/contact
+[2022-09-20 21:03:21.859 -04:00  INF]  User profile is available. Using 'C:\Users\Maxi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-09-20 21:03:22.332 -04:00  INF]  Now listening on: https://localhost:7117
+[2022-09-20 21:03:22.332 -04:00  INF]  Now listening on: http://localhost:5014
+[2022-09-20 21:03:22.332 -04:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-09-20 21:03:22.332 -04:00  INF]  Hosting environment: Development
+[2022-09-20 21:03:22.332 -04:00  INF]  Content root path: C:\apps\citizenship-app\Citizenship-Web\Maxi.Citizenship
+[2022-09-20 21:03:23.180 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:03:27.390 -04:00  INF]  No SPA development server running at https://localhost:44485 found.
+[2022-09-20 21:03:27.531 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:03:27.539 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 4361.0245ms
+[2022-09-20 21:03:30.585 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:03:34.651 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:03:34.653 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 4067.1436ms
+[2022-09-20 21:03:37.682 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:03:47.687 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:03:47.687 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 10004.7772ms
+[2022-09-20 21:03:50.716 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:03:58.638 -04:00  INF]  SPA proxy is ready. Redirecting to https://localhost:44485.
+[2022-09-20 21:03:58.638 -04:00  INF]  SPA development server running at 'https://localhost:44485'
+[2022-09-20 21:03:58.639 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 302 0 - 7922.5321ms
+[2022-09-20 21:04:03.288 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/bff/user - -
+[2022-09-20 21:04:03.487 -04:00  INF]  No cached response available for this request.
+[2022-09-20 21:04:04.624 -04:00  INF]  Executing endpoint 'HTTP: GET /bff/user'
+[2022-09-20 21:04:04.627 -04:00  INF]  Executed endpoint 'HTTP: GET /bff/user'
+[2022-09-20 21:04:04.628 -04:00  INF]  The response could not be cached for this request.
+[2022-09-20 21:04:04.689 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/bff/user - - - 401 0 - 1400.4366ms
+[2022-09-20 21:04:04.707 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/bff/user - -
+[2022-09-20 21:04:04.709 -04:00  INF]  No cached response available for this request.
+[2022-09-20 21:04:04.714 -04:00  INF]  Executing endpoint 'HTTP: GET /bff/user'
+[2022-09-20 21:04:04.715 -04:00  INF]  Executed endpoint 'HTTP: GET /bff/user'
+[2022-09-20 21:04:04.715 -04:00  INF]  The response could not be cached for this request.
+[2022-09-20 21:04:04.716 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/bff/user - - - 401 0 - 8.5729ms
+[2022-09-20 21:08:07.724 -04:00  WRN]  You do not have a valid license key for the Duende software. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please start a conversation with us: https://duendesoftware.com/contact
+[2022-09-20 21:08:07.789 -04:00  INF]  User profile is available. Using 'C:\Users\Maxi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-09-20 21:08:07.983 -04:00  INF]  Now listening on: https://localhost:7117
+[2022-09-20 21:08:07.983 -04:00  INF]  Now listening on: http://localhost:5014
+[2022-09-20 21:08:07.983 -04:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-09-20 21:08:07.983 -04:00  INF]  Hosting environment: Development
+[2022-09-20 21:08:07.983 -04:00  INF]  Content root path: C:\apps\citizenship-app\Citizenship-Web\Maxi.Citizenship
+[2022-09-20 21:08:08.702 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:08:12.867 -04:00  INF]  No SPA development server running at https://localhost:44485 found.
+[2022-09-20 21:08:12.958 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:08:12.962 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 4263.4844ms
+[2022-09-20 21:08:15.992 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:08:20.052 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:08:20.053 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 4060.7086ms
+[2022-09-20 21:08:23.076 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:08:23.811 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:08:23.811 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 735.0011ms
+[2022-09-20 21:08:26.834 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:08:26.848 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:08:26.849 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 14.6323ms
+[2022-09-20 21:08:29.887 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:08:29.896 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:08:29.896 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 10.5331ms
+[2022-09-20 21:08:32.919 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:08:32.928 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:08:32.928 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 10.1480ms
+[2022-09-20 21:08:35.948 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:08:35.959 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:08:35.959 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 11.2412ms
+[2022-09-20 21:08:38.979 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:08:38.989 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:08:38.989 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 10.3957ms
+[2022-09-20 21:08:42.017 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:08:42.029 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:08:42.029 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 11.8956ms
+[2022-09-20 21:08:45.059 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:08:45.071 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:08:45.072 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 12.6350ms
+[2022-09-20 21:08:48.086 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:08:48.094 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:08:48.094 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 7.6852ms
+[2022-09-20 21:08:51.122 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:08:51.132 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:08:51.132 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 9.5487ms
+[2022-09-20 21:08:54.152 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:08:54.163 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:08:54.163 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 11.5683ms
+[2022-09-20 21:08:57.197 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:08:57.205 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:08:57.205 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 8.5684ms
+[2022-09-20 21:09:00.231 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:09:00.238 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:09:00.238 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 7.4629ms
+[2022-09-20 21:09:03.287 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:09:03.307 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:09:03.307 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 19.9914ms
+[2022-09-20 21:09:06.330 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:09:06.338 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:09:06.338 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 7.8245ms
+[2022-09-20 21:09:09.360 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:09:09.372 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:09:09.372 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 11.7554ms
+[2022-09-20 21:09:12.398 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:09:12.406 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:09:12.406 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 8.4770ms
+[2022-09-20 21:09:15.424 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:09:15.431 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:09:15.431 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 6.5039ms
+[2022-09-20 21:09:18.455 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:09:18.468 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:09:18.468 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 13.7302ms
+[2022-09-20 21:09:21.502 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:09:21.508 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:09:21.508 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 6.5479ms
+[2022-09-20 21:09:24.537 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:09:24.549 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:09:24.549 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 12.1665ms
+[2022-09-20 21:09:27.565 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:09:27.575 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:09:27.575 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 9.9396ms
+[2022-09-20 21:09:30.601 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:09:30.610 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:09:30.611 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 9.4621ms
+[2022-09-20 21:09:33.635 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:09:33.642 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:09:33.642 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 7.2548ms
+[2022-09-20 21:09:36.663 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:09:36.670 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:09:36.670 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 6.6475ms
+[2022-09-20 21:09:39.724 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:09:39.731 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:09:39.731 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 6.9652ms
+[2022-09-20 21:09:42.754 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:09:42.761 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:09:42.761 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 7.6788ms
+[2022-09-20 21:09:45.804 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:09:45.816 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:09:45.816 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 12.3749ms
+[2022-09-20 21:09:48.829 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:09:48.835 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:09:48.835 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 6.4447ms
+[2022-09-20 21:09:51.850 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:09:51.860 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:09:51.860 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 9.9750ms
+[2022-09-20 21:09:54.892 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:09:54.904 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:09:54.904 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 12.0304ms
+[2022-09-20 21:09:57.951 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:09:57.963 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:09:57.963 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 12.0283ms
+[2022-09-20 21:10:00.994 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:10:01.001 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:10:01.001 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 7.2238ms
+[2022-09-20 21:10:04.018 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:10:04.028 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:10:04.029 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 11.3625ms
+[2022-09-20 21:10:07.051 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:10:07.060 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:10:07.060 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 10.1499ms
+[2022-09-20 21:10:10.080 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:10:10.095 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:10:10.096 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 16.3505ms
+[2022-09-20 21:10:13.123 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:10:13.130 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:10:13.130 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 8.1237ms
+[2022-09-20 21:10:14.519 -04:00  ERR]  Unable to connect to the SPA development server at 'https://localhost:44485'.
+[2022-09-20 21:10:16.157 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:10:16.165 -04:00  INF]  No SPA development server running at https://localhost:44485 found.
+[2022-09-20 21:10:16.199 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:10:16.200 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 42.9971ms
+[2022-09-20 21:10:19.223 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:10:19.230 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:10:19.230 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 7.2235ms
+[2022-09-20 21:10:22.265 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:10:22.271 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:10:22.271 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 6.8301ms
+[2022-09-20 21:10:25.294 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:10:25.307 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:10:25.308 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 13.6383ms
+[2022-09-20 21:10:28.355 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:10:28.363 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:10:28.363 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 7.8692ms
+[2022-09-20 21:10:31.403 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:10:31.411 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:10:31.412 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 9.4051ms
+[2022-09-20 21:10:34.452 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:10:34.461 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:10:34.461 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 9.2030ms
+[2022-09-20 21:10:37.480 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:10:38.140 -04:00  INF]  SPA development server running at 'https://localhost:44485'
+[2022-09-20 21:10:38.140 -04:00  INF]  SPA proxy is ready. Redirecting to https://localhost:44485.
+[2022-09-20 21:10:38.141 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 302 0 - 660.3368ms
+[2022-09-20 21:19:35.628 -04:00  WRN]  You do not have a valid license key for the Duende software. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please start a conversation with us: https://duendesoftware.com/contact
+[2022-09-20 21:19:35.909 -04:00  INF]  User profile is available. Using 'C:\Users\Maxi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-09-20 21:19:36.433 -04:00  INF]  Now listening on: https://localhost:7117
+[2022-09-20 21:19:36.433 -04:00  INF]  Now listening on: http://localhost:5014
+[2022-09-20 21:19:36.434 -04:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-09-20 21:19:36.434 -04:00  INF]  Hosting environment: Development
+[2022-09-20 21:19:36.434 -04:00  INF]  Content root path: C:\apps\citizenship-app\Citizenship-Web\Maxi.Citizenship
+[2022-09-20 21:19:38.328 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:19:42.794 -04:00  INF]  No SPA development server running at https://localhost:44485 found.
+[2022-09-20 21:19:42.885 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:19:42.889 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 4574.4415ms
+[2022-09-20 21:19:45.934 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:19:50.033 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:19:50.033 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 4099.7791ms
+[2022-09-20 21:19:53.063 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:20:01.936 -04:00  INF]  SPA proxy is ready. Redirecting to https://localhost:44485.
+[2022-09-20 21:20:01.936 -04:00  INF]  SPA development server running at 'https://localhost:44485'
+[2022-09-20 21:20:01.936 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 302 0 - 8873.4887ms
+[2022-09-20 21:42:37.090 -04:00  WRN]  You do not have a valid license key for the Duende software. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please start a conversation with us: https://duendesoftware.com/contact
+[2022-09-20 21:42:37.254 -04:00  INF]  User profile is available. Using 'C:\Users\Maxi\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+[2022-09-20 21:42:37.678 -04:00  INF]  Now listening on: https://localhost:7117
+[2022-09-20 21:42:37.678 -04:00  INF]  Now listening on: http://localhost:5014
+[2022-09-20 21:42:37.679 -04:00  INF]  Application started. Press Ctrl+C to shut down.
+[2022-09-20 21:42:37.679 -04:00  INF]  Hosting environment: Development
+[2022-09-20 21:42:37.680 -04:00  INF]  Content root path: C:\apps\citizenship-app\Citizenship-Web\Maxi.Citizenship
+[2022-09-20 21:42:38.495 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:42:42.714 -04:00  INF]  No SPA development server running at https://localhost:44485 found.
+[2022-09-20 21:42:43.010 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:42:43.018 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 4524.0707ms
+[2022-09-20 21:42:46.069 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:42:50.163 -04:00  INF]  SPA proxy is not ready. Returning temporary landing page.
+[2022-09-20 21:42:50.164 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 200 - text/html 4094.9180ms
+[2022-09-20 21:42:53.200 -04:00  INF]  Request starting HTTP/2 GET https://localhost:7117/ - -
+[2022-09-20 21:42:57.703 -04:00  INF]  SPA proxy is ready. Redirecting to https://localhost:44485.
+[2022-09-20 21:42:57.703 -04:00  INF]  SPA development server running at 'https://localhost:44485'
+[2022-09-20 21:42:57.704 -04:00  INF]  Request finished HTTP/2 GET https://localhost:7117/ - - - 302 0 - 4503.5499ms
+[2022-09-20 21:47:33.306 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/api/questions - -
+[2022-09-20 21:47:33.426 -04:00  INF]  No cached response available for this request.
+[2022-09-20 21:47:34.349 -04:00  INF]  Executing endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-20 21:47:36.379 -04:00  INF]  Setting HTTP status code 200.
+[2022-09-20 21:47:36.383 -04:00  INF]  Writing value of type 'IQueryable`1' as Json.
+[2022-09-20 21:47:37.454 -04:00  INF]  Executed DbCommand (72ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT q.id::int AS "Id", q.prompt AS "Prompt", q1.app_name AS "Category", q1.id::int AS "CategoryId", q0.app_name AS "SubCategory", q0.id::int AS "SubCategoryId", q2.app_name AS "Type", q2.id::int AS "TypeId", q.has_asterisk AS "HasAsterisk", q.image_url AS "ImageUrl"
+FROM question AS q
+INNER JOIN question_sub_category AS q0 ON q.question_sub_category_id = q0.id
+INNER JOIN question_category AS q1 ON q0.question_category_id = q1.id
+INNER JOIN question_type AS q2 ON q.question_type_id = q2.id
+[2022-09-20 21:47:37.635 -04:00  INF]  Executed endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-20 21:47:37.640 -04:00  INF]  The response could not be cached for this request.
+[2022-09-20 21:47:37.653 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/api/questions - - - 200 - application/json;+charset=utf-8 4346.9265ms
+[2022-09-20 21:50:03.818 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/api/questions - -
+[2022-09-20 21:50:03.822 -04:00  INF]  No cached response available for this request.
+[2022-09-20 21:50:03.829 -04:00  INF]  Executing endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-20 21:50:03.868 -04:00  INF]  Setting HTTP status code 200.
+[2022-09-20 21:50:03.868 -04:00  INF]  Writing value of type 'IQueryable`1' as Json.
+[2022-09-20 21:50:03.894 -04:00  INF]  Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT q.id::int AS "Id", q.prompt AS "Prompt", q1.app_name AS "Category", q1.id::int AS "CategoryId", q0.app_name AS "SubCategory", q0.id::int AS "SubCategoryId", q2.app_name AS "Type", q2.id::int AS "TypeId", q.has_asterisk AS "HasAsterisk", q.image_url AS "ImageUrl"
+FROM question AS q
+INNER JOIN question_sub_category AS q0 ON q.question_sub_category_id = q0.id
+INNER JOIN question_category AS q1 ON q0.question_category_id = q1.id
+INNER JOIN question_type AS q2 ON q.question_type_id = q2.id
+[2022-09-20 21:50:03.902 -04:00  INF]  Executed endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-20 21:50:03.902 -04:00  INF]  The response could not be cached for this request.
+[2022-09-20 21:50:03.903 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/api/questions - - - 200 - application/json;+charset=utf-8 85.0272ms
+[2022-09-20 21:51:21.651 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/api/questions - -
+[2022-09-20 21:51:21.655 -04:00  INF]  No cached response available for this request.
+[2022-09-20 21:51:21.665 -04:00  INF]  Executing endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-20 21:51:21.784 -04:00  INF]  Setting HTTP status code 200.
+[2022-09-20 21:51:21.784 -04:00  INF]  Writing value of type 'IQueryable`1' as Json.
+[2022-09-20 21:51:21.793 -04:00  INF]  Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT q.id::int AS "Id", q.prompt AS "Prompt", q1.app_name AS "Category", q1.id::int AS "CategoryId", q0.app_name AS "SubCategory", q0.id::int AS "SubCategoryId", q2.app_name AS "Type", q2.id::int AS "TypeId", q.has_asterisk AS "HasAsterisk", q.image_url AS "ImageUrl"
+FROM question AS q
+INNER JOIN question_sub_category AS q0 ON q.question_sub_category_id = q0.id
+INNER JOIN question_category AS q1 ON q0.question_category_id = q1.id
+INNER JOIN question_type AS q2 ON q.question_type_id = q2.id
+[2022-09-20 21:51:21.811 -04:00  INF]  Executed endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-20 21:51:21.812 -04:00  INF]  The response could not be cached for this request.
+[2022-09-20 21:51:21.812 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/api/questions - - - 200 - application/json;+charset=utf-8 161.6705ms
+[2022-09-20 21:51:46.480 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/api/questions - -
+[2022-09-20 21:51:46.481 -04:00  INF]  No cached response available for this request.
+[2022-09-20 21:51:46.481 -04:00  INF]  Executing endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-20 21:51:46.482 -04:00  INF]  Setting HTTP status code 200.
+[2022-09-20 21:51:46.482 -04:00  INF]  Writing value of type 'IQueryable`1' as Json.
+[2022-09-20 21:51:46.487 -04:00  INF]  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT q.id::int AS "Id", q.prompt AS "Prompt", q1.app_name AS "Category", q1.id::int AS "CategoryId", q0.app_name AS "SubCategory", q0.id::int AS "SubCategoryId", q2.app_name AS "Type", q2.id::int AS "TypeId", q.has_asterisk AS "HasAsterisk", q.image_url AS "ImageUrl"
+FROM question AS q
+INNER JOIN question_sub_category AS q0 ON q.question_sub_category_id = q0.id
+INNER JOIN question_category AS q1 ON q0.question_category_id = q1.id
+INNER JOIN question_type AS q2 ON q.question_type_id = q2.id
+[2022-09-20 21:51:46.491 -04:00  INF]  Executed endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-20 21:51:46.493 -04:00  INF]  The response could not be cached for this request.
+[2022-09-20 21:51:46.494 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/api/questions - - - 200 - application/json;+charset=utf-8 13.5366ms
+[2022-09-20 21:54:15.227 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/api/questions - -
+[2022-09-20 21:54:15.227 -04:00  INF]  No cached response available for this request.
+[2022-09-20 21:54:15.227 -04:00  INF]  Executing endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-20 21:54:15.228 -04:00  INF]  Setting HTTP status code 200.
+[2022-09-20 21:54:15.228 -04:00  INF]  Writing value of type 'IQueryable`1' as Json.
+[2022-09-20 21:54:15.254 -04:00  INF]  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT q.id::int AS "Id", q.prompt AS "Prompt", q1.app_name AS "Category", q1.id::int AS "CategoryId", q0.app_name AS "SubCategory", q0.id::int AS "SubCategoryId", q2.app_name AS "Type", q2.id::int AS "TypeId", q.has_asterisk AS "HasAsterisk", q.image_url AS "ImageUrl"
+FROM question AS q
+INNER JOIN question_sub_category AS q0 ON q.question_sub_category_id = q0.id
+INNER JOIN question_category AS q1 ON q0.question_category_id = q1.id
+INNER JOIN question_type AS q2 ON q.question_type_id = q2.id
+[2022-09-20 21:54:15.255 -04:00  INF]  Executed endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-20 21:54:15.255 -04:00  INF]  The response could not be cached for this request.
+[2022-09-20 21:54:15.256 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/api/questions - - - 200 - application/json;+charset=utf-8 28.7862ms
+[2022-09-20 21:55:31.590 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/api/questions - -
+[2022-09-20 21:55:31.590 -04:00  INF]  No cached response available for this request.
+[2022-09-20 21:55:31.591 -04:00  INF]  Executing endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-20 21:55:31.591 -04:00  INF]  Setting HTTP status code 200.
+[2022-09-20 21:55:31.591 -04:00  INF]  Writing value of type 'IQueryable`1' as Json.
+[2022-09-20 21:55:31.597 -04:00  INF]  Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT q.id::int AS "Id", q.prompt AS "Prompt", q1.app_name AS "Category", q1.id::int AS "CategoryId", q0.app_name AS "SubCategory", q0.id::int AS "SubCategoryId", q2.app_name AS "Type", q2.id::int AS "TypeId", q.has_asterisk AS "HasAsterisk", q.image_url AS "ImageUrl"
+FROM question AS q
+INNER JOIN question_sub_category AS q0 ON q.question_sub_category_id = q0.id
+INNER JOIN question_category AS q1 ON q0.question_category_id = q1.id
+INNER JOIN question_type AS q2 ON q.question_type_id = q2.id
+[2022-09-20 21:55:31.609 -04:00  INF]  Executed endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-20 21:55:31.609 -04:00  INF]  The response could not be cached for this request.
+[2022-09-20 21:55:31.610 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/api/questions - - - 200 - application/json;+charset=utf-8 19.7355ms
+[2022-09-20 21:55:31.652 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/api/questions - -
+[2022-09-20 21:55:31.652 -04:00  INF]  No cached response available for this request.
+[2022-09-20 21:55:31.652 -04:00  INF]  Executing endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-20 21:55:31.653 -04:00  INF]  Setting HTTP status code 200.
+[2022-09-20 21:55:31.653 -04:00  INF]  Writing value of type 'IQueryable`1' as Json.
+[2022-09-20 21:55:31.656 -04:00  INF]  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT q.id::int AS "Id", q.prompt AS "Prompt", q1.app_name AS "Category", q1.id::int AS "CategoryId", q0.app_name AS "SubCategory", q0.id::int AS "SubCategoryId", q2.app_name AS "Type", q2.id::int AS "TypeId", q.has_asterisk AS "HasAsterisk", q.image_url AS "ImageUrl"
+FROM question AS q
+INNER JOIN question_sub_category AS q0 ON q.question_sub_category_id = q0.id
+INNER JOIN question_category AS q1 ON q0.question_category_id = q1.id
+INNER JOIN question_type AS q2 ON q.question_type_id = q2.id
+[2022-09-20 21:55:31.658 -04:00  INF]  Executed endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-20 21:55:31.658 -04:00  INF]  The response could not be cached for this request.
+[2022-09-20 21:55:31.658 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/api/questions - - - 200 - application/json;+charset=utf-8 6.6323ms
+[2022-09-20 22:01:37.985 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/api/questions - -
+[2022-09-20 22:01:37.986 -04:00  INF]  No cached response available for this request.
+[2022-09-20 22:01:37.986 -04:00  INF]  Executing endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-20 22:01:37.988 -04:00  INF]  Setting HTTP status code 200.
+[2022-09-20 22:01:37.988 -04:00  INF]  Writing value of type 'IQueryable`1' as Json.
+[2022-09-20 22:01:38.037 -04:00  INF]  Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT q.id::int AS "Id", q.prompt AS "Prompt", q1.app_name AS "Category", q1.id::int AS "CategoryId", q0.app_name AS "SubCategory", q0.id::int AS "SubCategoryId", q2.app_name AS "Type", q2.id::int AS "TypeId", q.has_asterisk AS "HasAsterisk", q.image_url AS "ImageUrl"
+FROM question AS q
+INNER JOIN question_sub_category AS q0 ON q.question_sub_category_id = q0.id
+INNER JOIN question_category AS q1 ON q0.question_category_id = q1.id
+INNER JOIN question_type AS q2 ON q.question_type_id = q2.id
+[2022-09-20 22:01:38.039 -04:00  INF]  Executed endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-20 22:01:38.040 -04:00  INF]  The response could not be cached for this request.
+[2022-09-20 22:01:38.040 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/api/questions - - - 200 - application/json;+charset=utf-8 54.9761ms
+[2022-09-20 22:01:38.048 -04:00  INF]  Request starting HTTP/1.1 GET https://localhost:44485/api/questions - -
+[2022-09-20 22:01:38.053 -04:00  INF]  No cached response available for this request.
+[2022-09-20 22:01:38.053 -04:00  INF]  Executing endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-20 22:01:38.055 -04:00  INF]  Setting HTTP status code 200.
+[2022-09-20 22:01:38.055 -04:00  INF]  Writing value of type 'IQueryable`1' as Json.
+[2022-09-20 22:01:38.058 -04:00  INF]  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT q.id::int AS "Id", q.prompt AS "Prompt", q1.app_name AS "Category", q1.id::int AS "CategoryId", q0.app_name AS "SubCategory", q0.id::int AS "SubCategoryId", q2.app_name AS "Type", q2.id::int AS "TypeId", q.has_asterisk AS "HasAsterisk", q.image_url AS "ImageUrl"
+FROM question AS q
+INNER JOIN question_sub_category AS q0 ON q.question_sub_category_id = q0.id
+INNER JOIN question_category AS q1 ON q0.question_category_id = q1.id
+INNER JOIN question_type AS q2 ON q.question_type_id = q2.id
+[2022-09-20 22:01:38.063 -04:00  INF]  Executed endpoint 'HTTP: GET api/questions/ => List'
+[2022-09-20 22:01:38.063 -04:00  INF]  The response could not be cached for this request.
+[2022-09-20 22:01:38.063 -04:00  INF]  Request finished HTTP/1.1 GET https://localhost:44485/api/questions - - - 200 - application/json;+charset=utf-8 15.3524ms
